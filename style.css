@@ -1,0 +1,28 @@
+#hero {
+  height: 200px;
+  background: url(http://religionistika.phil.muni.cz/hnr2018/hero-vis.png);
+}
+
+#photo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+#photo img {
+  height: 200px;
+  width: 200px;
+}
+
+#heading {
+  color: white;
+  position: absolute;
+  left: 400px;
+  top: 50px;
+}
+
+#heading #name {
+  padding: 0;
+}
+
+#heading #topics {
+}
