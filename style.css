@@ -1,12 +1,15 @@
 #hero {
   height: 200px;
   background: url(http://religionistika.phil.muni.cz/hnr2018/hero-vis.png);
+  position: absolute;
+  top: 0px;
+  width: 100%;
 }
 
 #photo {
   position: absolute;
   top: 50px;
-  left: 50px;
+  left: 150px;
 }
 #photo img {
   height: 200px;
@@ -25,4 +28,30 @@
 }
 
 #heading #topics {
+}
+
+#content {
+  margin-left: 150px;
+  padding-top: 250px;
+}
+
+.section .part {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.section .part .value {
+  font-weight: bolder;
+}
+
+.section.one-line .part .definition::after {
+  content: ":  ";
+}
+
+.section.one-line .part {
+  display: flex;
+}
+
+.section.more-lines .part {
+  display: block;
 }
