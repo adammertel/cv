@@ -49,15 +49,12 @@
   font-size: 20px;
 }
 
-.section .part .value {
-}
-
 .section.one-line .part {
   margin: 5px 0;
 }
 
 .section.one-line .part .definition::after {
-  content: ":";
+  content: ':';
 }
 .section.one-line .part .value {
   margin-left: 5px;
@@ -71,6 +68,17 @@
   display: block;
 }
 
+.section.more-lines .section .part .value {
+  margin-top: -5px;
+}
+
+.section.more-lines .part .image {
+  width: 50%;
+  float: left;
+  margin-right: 20px;
+}
+
 .definition {
   font-weight: 600;
+  display: inline-block;
 }
