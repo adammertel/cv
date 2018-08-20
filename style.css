@@ -70,6 +70,7 @@
 
 .section.more-lines.research .part {
   display: inline-block;
+  margin-bottom: 50px;
 }
 
 .section.more-lines .section .part .value {
@@ -79,6 +80,10 @@
 .section.more-lines .part .link {
   display: block;
 }
+.part .link a {
+  color: mediumseagreen;
+}
+
 .section.more-lines .part .image {
   width: 50%;
   max-width: 400px;
