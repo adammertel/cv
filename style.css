@@ -68,14 +68,26 @@
   display: block;
 }
 
+.section.more-lines.research .part {
+  display: inline-block;
+}
+
 .section.more-lines .section .part .value {
   margin-top: -5px;
 }
 
+.section.more-lines .part .link {
+  display: block;
+}
 .section.more-lines .part .image {
   width: 50%;
+  max-width: 400px;
   float: left;
   margin-right: 20px;
+}
+
+.section.more-lines .part .image img {
+  width: 100%;
 }
 
 .definition {
