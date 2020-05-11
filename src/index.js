@@ -1,4 +1,4 @@
-import "react-bulma-components/dist/react-bulma-components.min.css";
+import "./app.sass";
 import * as React from "react";
 import ReactDOM from "react-dom";
 
