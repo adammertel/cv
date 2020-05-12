@@ -423,7 +423,12 @@ const App = (props) => {
         {sections.map((section, si) => {
           const active = activeSection === section.title;
           return (
-            <Tabs.Tab className="tab" key={si} active={active}>
+            <Tabs.Tab
+              className="tab"
+              href={"#" + section.title}
+              key={si}
+              active={active}
+            >
               <div className="tab-part tab-icon">{section.icon}</div>
               <div className="tab-part tab-title">{section.title}</div>
             </Tabs.Tab>
@@ -436,6 +441,7 @@ const App = (props) => {
           return (
             <Section
               key={si}
+              id={section.title}
               className="content-section"
               data-section={section.title}
             >
