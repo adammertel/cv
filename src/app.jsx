@@ -1,5 +1,4 @@
 import {
-  Button,
   Section,
   Tabs,
   Hero,
@@ -7,13 +6,27 @@ import {
   Heading,
 } from "react-bulma-components";
 
+import {
+  FaLinkedin,
+  FaGithub,
+  FaResearchgate,
+  FaHome,
+  FaBook,
+  FaMapMarkedAlt,
+  FaDatabase,
+  FaChartLine,
+  FaCode,
+} from "react-icons/fa";
+import { MdEmail, MdPlace, MdSchool, MdWork } from "react-icons/md";
+
 import React from "react";
 
 const renderItemDefault = (section, item, ii) => {
+  const icon = section.icon || item.icon;
   return (
     <div className={"item" + " item-" + section.title} key={ii}>
       {item.time && <div className="time">{item.time}</div>}
-      {item.icon && <div className="icon">{section.icon}</div>}
+      {icon && <div className="icon">{icon}</div>}
       <div className="text-label">{item.label}</div>
 
       {item.link1 ? (
@@ -40,46 +53,47 @@ const sections = [
     title: "Contact",
     items: [
       {
-        label: "born",
-        text1: "1988, Ilava, Slovakia",
+        label: "origin",
+        text1: "Nová Dubnica, Slovakia",
         link1: false,
-        icon: false,
+        icon: <FaHome />,
       },
       {
         label: "Actual residence",
         text1: "Brno, Czech Republic",
         link1: false,
-        icon: false,
+        icon: <MdPlace />,
       },
       {
         label: "Mail",
         text1: "mertel.adam@gmail.com",
         link1: false,
-        icon: false,
+        icon: <MdEmail />,
       },
       {
         label: "GitHub",
         text1: "adammertel",
         link1: "https://github.com/adammertel",
-        icon: false,
+        icon: <FaGithub />,
       },
       {
         label: "Academia",
         text1: "AMertel",
         link1: "https://muni.academia.edu/AMertel",
-        icon: false,
+        icon: <FaResearchgate />,
       },
       {
         label: "Linkedin",
         text1: "adam mertel",
         link1: "https://www.linkedin.com/in/adam-mertel-a294573a/",
-        icon: false,
+        icon: <FaLinkedin />,
       },
     ],
     renderItem: renderItemDefault,
   },
   {
     title: "Education",
+    icon: <MdSchool />,
     renderItem: renderItemDefault,
     items: [
       {
@@ -91,6 +105,7 @@ const sections = [
   },
   {
     title: "Work Experience",
+    icon: <MdWork />,
     items: [
       {
         time: "Mar 2018 – ",
@@ -113,6 +128,7 @@ const sections = [
   },
   {
     title: "Studies",
+    icon: <FaBook />,
     items: [
       {
         time: "2020",
@@ -203,7 +219,7 @@ const sections = [
     items: [
       {
         groupName: "Programming",
-        groupIcon: false,
+        groupIcon: <FaCode />,
         groupItems: [
           {
             groupItemName: "Web programming",
@@ -248,7 +264,7 @@ const sections = [
       },
       {
         groupName: "Visualization",
-        groupIcon: false,
+        groupIcon: <FaChartLine />,
         groupItems: [
           {
             groupItemName: "Visualization frameworks and libraries",
@@ -272,7 +288,7 @@ const sections = [
       },
       {
         groupName: "GIS",
-        groupIcon: false,
+        groupIcon: <FaMapMarkedAlt />,
         groupItems: [
           {
             groupItemName: "Web GIS",
@@ -305,7 +321,7 @@ const sections = [
       },
       {
         groupName: "Databases",
-        groupIcon: false,
+        groupIcon: <FaDatabase />,
         groupItems: [
           {
             groupItemName: "Relational",
@@ -344,6 +360,7 @@ const sections = [
           {item.groupItems.map((groupItem, gii) => {
             return (
               <div className="item-group" key={gii}>
+                <div className="item-group-icon">{item.groupIcon}</div>
                 <div className="item-group-name">{groupItem.groupItemName}</div>
                 <div className="item-group-examples">
                   {groupItem.examples.map((example, ei) => {
