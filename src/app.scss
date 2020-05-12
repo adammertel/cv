@@ -8,7 +8,6 @@
 @import "~bulma/sass/layout/_all.sass";
 
 #app {
-  margin-bottom: 30em;
   .tabs {
     position: sticky;
     margin-bottom: 0;
@@ -39,61 +38,63 @@
       }
     }
   }
-}
-.app-content {
-  .title {
-  }
 
-  .section {
-    padding: 2em 1em 0em 1em;
-    .section-content {
-      .item {
-        margin-left: 2em;
-        margin-bottom: 1em;
-        .icon {
-          display: inline-block;
-          font-size: 1em;
-          margin-left: -1.5em;
-          vertical-align: middle;
-        }
-        .text-time {
-          color: $primary;
-        }
-        .text-label {
-          font-weight: bolder;
-          display: inline-block;
-        }
-        .examples {
-          display: block;
-          .example {
-            display: inline;
+  .app-content {
+    margin-bottom: 30em;
+    .title {
+    }
+
+    .section {
+      padding: 3em 1em 0em 1em;
+      .section-content {
+        .item {
+          margin-left: 2em;
+          margin-bottom: 1em;
+          .icon {
+            display: inline-block;
+            font-size: 1em;
+            margin-left: -1.5em;
+            vertical-align: middle;
           }
-        }
-        .link {
-          color: $primary;
-          &.link1 {
+          .text-time {
+            color: $primary;
           }
-          &.link2 {
+          .text-label {
+            font-weight: bolder;
+            display: inline-block;
           }
-        }
-        .text {
-          &.text1 {
+          .examples {
+            display: block;
+            .example {
+              display: inline;
+            }
           }
-          &.text2 {
+          .link {
+            color: $primary;
+            &.link1 {
+            }
+            &.link2 {
+            }
+          }
+          .text {
+            &.text1 {
+            }
+            &.text2 {
+            }
           }
         }
       }
     }
   }
-}
 
-.hero {
-  .hero-foot {
-    .tabs {
-      ul {
-        li {
-          a {
-            border-radius: 0;
+  .hero {
+    .hero-foot {
+      .tabs {
+        ul {
+          li {
+            a {
+              border-radius: 0;
+            }
           }
         }
       }

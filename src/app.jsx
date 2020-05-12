@@ -3,7 +3,9 @@ import {
   Tabs,
   Hero,
   Container,
+  Content,
   Heading,
+  Footer,
 } from "react-bulma-components";
 
 import {
@@ -457,6 +459,16 @@ const App = (props) => {
           );
         })}
       </Container>
+      <Footer>
+        <Container>
+          <Content style={{}}>
+            <p>
+              <strong>Adam Mertel</strong>
+            </p>
+            <p>Created with React, Parcel, and Bulma</p>
+          </Content>
+        </Container>
+      </Footer>
     </div>
   );
 };
