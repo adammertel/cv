@@ -30,7 +30,7 @@ import {
 import React from "react";
 
 const renderItemDefault = (section, item, ii) => {
-  const icon = section.icon || item.icon;
+  const icon = item.icon || section.icon;
   return (
     <div className={"item" + " item-" + section.title} key={ii}>
       {item.time && <div className="text-time">{item.time}</div>}
@@ -62,7 +62,7 @@ const sections = [
     icon: <MdPermContactCalendar />,
     items: [
       {
-        label: "origin",
+        label: "Origin",
         text1: "Nová Dubnica, Slovakia",
         link1: false,
         icon: <FaHome />,
@@ -384,6 +384,16 @@ const sections = [
 const App = (props) => {
   return (
     <div>
+      <Hero color="primary" size="medium">
+        <Hero.Body>
+          <Container>
+            <Heading>Adam Mertel</Heading>
+            <Heading subtitle size={3}>
+              maps, programming and data analysis
+            </Heading>
+          </Container>
+        </Hero.Body>
+      </Hero>
       <Tabs type="toggle" fullwidth align="centered">
         {sections.map((section, si) => {
           const active = si === 0 ? true : false;
@@ -395,16 +405,6 @@ const App = (props) => {
           );
         })}
       </Tabs>
-      <Hero color="primary" size="medium">
-        <Hero.Body>
-          <Container>
-            <Heading>Adam Mertel</Heading>
-            <Heading subtitle size={3}>
-              maps, programming and data analysis
-            </Heading>
-          </Container>
-        </Hero.Body>
-      </Hero>
 
       <Container className="app-content">
         {sections.map((section, si) => {
