@@ -1,0 +1,22 @@
+@import "_variables";
+@import "~bulma/sass/utilities/_all.sass";
+@import "~bulma/sass/base/_all.sass";
+@import "~bulma/sass/components/_all.sass";
+@import "~bulma/sass/elements/_all.sass";
+@import "~bulma/sass/form/_all.sass";
+@import "~bulma/sass/grid/_all.sass";
+@import "~bulma/sass/layout/_all.sass";
+
+.hero {
+  .hero-foot {
+    .tabs {
+      ul {
+        li {
+          a {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}
