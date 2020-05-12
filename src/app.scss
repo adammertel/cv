@@ -7,6 +7,27 @@
 @import "~bulma/sass/grid/_all.sass";
 @import "~bulma/sass/layout/_all.sass";
 
+#app {
+  .tabs {
+    position: sticky;
+    margin-bottom: 0;
+    top: 0;
+    z-index: 100;
+    .tab {
+      a {
+        border-width: 0px 2px 1px 2px;
+        border-color: $white;
+        font-weight: bolder;
+        border-radius: 0;
+        color: white;
+        background-color: $grey;
+      }
+      &.is-active a {
+        background-color: $primary;
+      }
+    }
+  }
+}
 .app-content {
   .title {
   }

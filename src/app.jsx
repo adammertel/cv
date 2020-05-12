@@ -374,6 +374,16 @@ const sections = [
 const App = (props) => {
   return (
     <div>
+      <Tabs type="toggle" fullwidth align="centered">
+        {sections.map((section, si) => {
+          const active = si === 0 ? true : false;
+          return (
+            <Tabs.Tab className="tab" key={si} active={active}>
+              {section.title}
+            </Tabs.Tab>
+          );
+        })}
+      </Tabs>
       <Hero color="primary" size="medium">
         <Hero.Body>
           <Container>
@@ -383,17 +393,6 @@ const App = (props) => {
             </Heading>
           </Container>
         </Hero.Body>
-        <Hero.Footer>
-          <Tabs type="toggle" fullwidth align="centered">
-            {sections.map((section, si) => {
-              return (
-                <Tabs.Tab key={si} active={si === 0 ? true : false}>
-                  {section.title}
-                </Tabs.Tab>
-              );
-            })}
-          </Tabs>
-        </Hero.Footer>
       </Hero>
 
       <Container className="app-content">
