@@ -27,7 +27,7 @@ import {
   MdWork,
 } from "react-icons/md";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const renderItemDefault = (section, item, ii) => {
   const icon = item.icon || section.icon;
@@ -382,6 +382,31 @@ const sections = [
 ];
 
 const App = (props) => {
+  const [activeSection, setActiveSection] = useState("Contact");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sectionEls = document.getElementsByClassName("content-section");
+      const sections = Array.from(sectionEls).map((section) => {
+        return {
+          top: section.getBoundingClientRect().y,
+          id: section.dataset.section,
+        };
+      });
+      let firstUpIndex = 0;
+      sections.forEach((section, si) => {
+        if (section.top < 50) {
+          firstUpIndex = si;
+        }
+      });
+      const newActiveSection = firstUpIndex
+        ? sections[firstUpIndex].id
+        : sections[0].id;
+      setActiveSection(newActiveSection);
+    };
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div>
       <Hero color="primary" size="medium">
@@ -396,7 +421,7 @@ const App = (props) => {
       </Hero>
       <Tabs type="toggle" fullwidth align="centered">
         {sections.map((section, si) => {
-          const active = si === 0 ? true : false;
+          const active = activeSection === section.title;
           return (
             <Tabs.Tab className="tab" key={si} active={active}>
               <div className="tab-part tab-icon">{section.icon}</div>
@@ -409,7 +434,11 @@ const App = (props) => {
       <Container className="app-content">
         {sections.map((section, si) => {
           return (
-            <Section key={si}>
+            <Section
+              key={si}
+              className="content-section"
+              data-section={section.title}
+            >
               <Heading>{section.title}</Heading>
               <div className="section-content">
                 {section.items.map((item, ii) => {
