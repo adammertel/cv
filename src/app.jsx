@@ -16,8 +16,16 @@ import {
   FaDatabase,
   FaChartLine,
   FaCode,
+  FaHammer,
+  FaPuzzlePiece,
 } from "react-icons/fa";
-import { MdEmail, MdPlace, MdSchool, MdWork } from "react-icons/md";
+import {
+  MdEmail,
+  MdPermContactCalendar,
+  MdPlace,
+  MdSchool,
+  MdWork,
+} from "react-icons/md";
 
 import React from "react";
 
@@ -51,6 +59,7 @@ const renderItemDefault = (section, item, ii) => {
 const sections = [
   {
     title: "Contact",
+    icon: <MdPermContactCalendar />,
     items: [
       {
         label: "origin",
@@ -216,6 +225,7 @@ const sections = [
   },
   {
     title: "Skills",
+    icon: <FaHammer />,
     items: [
       {
         label: "Web programming",
@@ -368,7 +378,7 @@ const sections = [
       );
     },
   },
-  { title: "Projects", items: [] },
+  { title: "Projects", items: [], icon: <FaPuzzlePiece /> },
 ];
 
 const App = (props) => {
@@ -379,7 +389,8 @@ const App = (props) => {
           const active = si === 0 ? true : false;
           return (
             <Tabs.Tab className="tab" key={si} active={active}>
-              {section.title}
+              <div className="tab-part tab-icon">{section.icon}</div>
+              <div className="tab-part tab-title">{section.title}</div>
             </Tabs.Tab>
           );
         })}
