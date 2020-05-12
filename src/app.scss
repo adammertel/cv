@@ -13,6 +13,12 @@
     margin-bottom: 0;
     top: 0;
     z-index: 100;
+    .tab:first-of-type a {
+      border-left: 0px;
+    }
+    .tab:last-of-type a {
+      border-right: 0px;
+    }
     .tab {
       a {
         border-width: 0px 2px 0px 2px;
