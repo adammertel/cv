@@ -25,24 +25,24 @@ const renderItemDefault = (section, item, ii) => {
   const icon = section.icon || item.icon;
   return (
     <div className={"item" + " item-" + section.title} key={ii}>
-      {item.time && <div className="time">{item.time}</div>}
+      {item.time && <div className="text-time">{item.time}</div>}
       {icon && <div className="icon">{icon}</div>}
       <div className="text-label">{item.label}</div>
 
       {item.link1 ? (
-        <a href={item.link1}>
-          <div className="text1">{item.text1}</div>
+        <a className="link link1" href={item.link1}>
+          <div className="text text1">{item.text1}</div>
         </a>
       ) : (
-        <div className="text1">{item.text1}</div>
+        <div className="text text1">{item.text1}</div>
       )}
       {item.text2 &&
         (item.link2 ? (
-          <a href={item.link2}>
-            <div className="text1">{item.text2}</div>
+          <a className="link link2" href={item.link2}>
+            <div className="text text2">{item.text2}</div>
           </a>
         ) : (
-          <div className="text1">{item.text2}</div>
+          <div className="text text2">{item.text2}</div>
         ))}
     </div>
   );
@@ -218,162 +218,152 @@ const sections = [
     title: "Skills",
     items: [
       {
-        groupName: "Programming",
-        groupIcon: <FaCode />,
-        groupItems: [
-          {
-            groupItemName: "Web programming",
-            examples: [
-              { name: "JavaScript", link: "" },
-              { name: "TypeScript", link: "" },
-              { name: "GitHub", link: "" },
-              { name: "Webpack", link: "" },
-            ],
-          },
-          {
-            groupItemName: "FrontEnd frameworks",
-            examples: [
-              { name: "ReactJS", link: "" },
-              { name: "post CSS", link: "" },
-              { name: "Scss / Sass", link: "" },
-              { name: "Bulma", link: "" },
-              { name: "Bootstrap", link: "" },
-              { name: "Tailwind CSS", link: "" },
-              { name: "JQuery", link: "" },
-            ],
-          },
-          {
-            groupItemName: "Server-side programming",
-            examples: [
-              { name: "NodeJS", link: "" },
-              { name: "Express", link: "" },
-              { name: "Sockets.io", link: "" },
-              { name: "Java", link: "" },
-            ],
-          },
-          {
-            groupItemName: "Data analysis",
-            examples: [
-              { name: "Pandas", link: "" },
-              { name: "scikit", link: "" },
-              { name: "networkX", link: "" },
-              { name: "R", link: "" },
-            ],
-          },
+        label: "Web programming",
+        icon: <FaCode />,
+        examples: [
+          { name: "JavaScript", link: "" },
+          { name: "TypeScript", link: "" },
+          { name: "GitHub", link: "" },
+          { name: "Webpack", link: "" },
         ],
       },
       {
-        groupName: "Visualization",
-        groupIcon: <FaChartLine />,
-        groupItems: [
-          {
-            groupItemName: "Visualization frameworks and libraries",
-            examples: [
-              { name: "D3", link: "" },
-              { name: "HTML5 Canvas", link: "" },
-              { name: "Cytoscape", link: "" },
-              { name: "Three.js", link: "" },
-            ],
-          },
-          {
-            groupItemName: "Desktop applications",
-            examples: [
-              { name: "Inkscape", link: "" },
-              { name: "Adobe Illustrator", link: "" },
-              { name: "Figma", link: "" },
-              { name: "Draw.io", link: "" },
-            ],
-          },
+        label: "FrontEnd frameworks",
+        icon: <FaCode />,
+        examples: [
+          { name: "ReactJS", link: "" },
+          { name: "post CSS", link: "" },
+          { name: "Scss / Sass", link: "" },
+          { name: "Bulma", link: "" },
+          { name: "Bootstrap", link: "" },
+          { name: "Tailwind CSS", link: "" },
+          { name: "JQuery", link: "" },
         ],
       },
       {
-        groupName: "GIS",
-        groupIcon: <FaMapMarkedAlt />,
-        groupItems: [
-          {
-            groupItemName: "Web GIS",
-            examples: [
-              { name: "Leaflet.js", link: "" },
-              { name: "D3", link: "" },
-              { name: "Open Layers", link: "" },
-              { name: "MapBox", link: "" },
-              { name: "Google Maps", link: "" },
-            ],
-          },
-          {
-            groupItemName: "Analytical GIS libraries",
-            examples: [
-              { name: "Grass", link: "" },
-              { name: "GDAL", link: "" },
-              { name: "R", link: "" },
-              { name: "OSGeo", link: "" },
-              { name: "JTS", link: "" },
-            ],
-          },
-          {
-            groupItemName: "Desktop GIS",
-            examples: [
-              { name: "QGIS", link: "" },
-              { name: "ArcGIS", link: "" },
-            ],
-          },
+        label: "Server-side programming",
+        icon: <FaCode />,
+        examples: [
+          { name: "NodeJS", link: "" },
+          { name: "Express", link: "" },
+          { name: "Sockets.io", link: "" },
+          { name: "Java", link: "" },
         ],
       },
       {
-        groupName: "Databases",
-        groupIcon: <FaDatabase />,
-        groupItems: [
-          {
-            groupItemName: "Relational",
-            examples: [
-              { name: "PostgreSQL", link: "" },
-              { name: "PostGIS", link: "" },
-              { name: "MariaDB", link: "" },
-              { name: "MySQL", link: "" },
-              { name: "", link: "" },
-            ],
-          },
-          {
-            groupItemName: "NoSQL",
-            examples: [
-              { name: "MongoDB", link: "" },
-              { name: "RethinkDB", link: "" },
-              { name: "ArrangoDB", link: "" },
-            ],
-          },
-          {
-            groupItemName: "Other",
-            examples: [
-              { name: "Neo4j", link: "" },
-              { name: "REST", link: "" },
-              { name: "graphQL", link: "" },
-            ],
-          },
+        label: "Data analysis",
+        icon: <FaCode />,
+        examples: [
+          { name: "Pandas", link: "" },
+          { name: "scikit", link: "" },
+          { name: "networkX", link: "" },
+          { name: "R", link: "" },
+        ],
+      },
+      {
+        label: "Visualization frameworks and libraries",
+        icon: <FaChartLine />,
+        examples: [
+          { name: "D3", link: "" },
+          { name: "HTML5 Canvas", link: "" },
+          { name: "Cytoscape", link: "" },
+          { name: "Three.js", link: "" },
+        ],
+      },
+      {
+        label: "Desktop applications",
+        icon: <FaChartLine />,
+        examples: [
+          { name: "Inkscape", link: "" },
+          { name: "Adobe Illustrator", link: "" },
+          { name: "Figma", link: "" },
+          { name: "Draw.io", link: "" },
+        ],
+      },
+
+      {
+        label: "Web GIS",
+        icon: <FaMapMarkedAlt />,
+        examples: [
+          { name: "Leaflet.js", link: "" },
+          { name: "D3", link: "" },
+          { name: "Open Layers", link: "" },
+          { name: "MapBox", link: "" },
+          { name: "Google Maps", link: "" },
+        ],
+      },
+      {
+        label: "Analytical GIS libraries",
+        icon: <FaMapMarkedAlt />,
+        examples: [
+          { name: "Grass", link: "" },
+          { name: "GDAL", link: "" },
+          { name: "R", link: "" },
+          { name: "OSGeo", link: "" },
+          { name: "JTS", link: "" },
+          { name: "turf", link: "" },
+        ],
+      },
+      {
+        label: "Desktop GIS",
+        icon: <FaMapMarkedAlt />,
+        examples: [
+          { name: "QGIS", link: "qgis.com" },
+          { name: "ArcGIS", link: "" },
+        ],
+      },
+      {
+        label: "Relational",
+        icon: <FaDatabase />,
+        examples: [
+          { name: "PostgreSQL", link: "" },
+          { name: "PostGIS", link: "" },
+          { name: "MariaDB", link: "" },
+          { name: "MySQL", link: "" },
+        ],
+      },
+      {
+        label: "NoSQL",
+        icon: <FaDatabase />,
+        examples: [
+          { name: "MongoDB", link: "" },
+          { name: "RethinkDB", link: "" },
+          { name: "ArrangoDB", link: "" },
+        ],
+      },
+      {
+        label: "Other",
+        icon: <FaDatabase />,
+        examples: [
+          { name: "Neo4j", link: "" },
+          { name: "REST", link: "" },
+          { name: "graphQL", link: "" },
         ],
       },
     ],
 
     renderItem: (section, item, ii) => {
       return (
-        <div className="item" key={ii}>
-          <div className="item-label">{item.groupName}</div>
-          {item.groupItems.map((groupItem, gii) => {
-            return (
-              <div className="item-group" key={gii}>
-                <div className="item-group-icon">{item.groupIcon}</div>
-                <div className="item-group-name">{groupItem.groupItemName}</div>
-                <div className="item-group-examples">
-                  {groupItem.examples.map((example, ei) => {
-                    return (
-                      <div className="example" key={ei}>
-                        {example.name}
-                      </div>
-                    );
-                  })}
+        <div className={"item" + " item-" + section.title} key={ii}>
+          {item.time && <div className="text-time">{item.time}</div>}
+          {item.icon && <div className="icon">{item.icon}</div>}
+          <div className="text-label">{item.label}</div>
+          <div className="examples">
+            {item.examples.map((example, ei) => {
+              return (
+                <div className="example" key={ei}>
+                  {example.link ? (
+                    <a className="link" href={example.link}>
+                      {example.name}
+                    </a>
+                  ) : (
+                    example.name
+                  )}
+                  ,{" "}
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       );
     },
@@ -406,12 +396,12 @@ const App = (props) => {
         </Hero.Footer>
       </Hero>
 
-      <Container>
+      <Container className="app-content">
         {sections.map((section, si) => {
           return (
             <Section key={si}>
               <Heading>{section.title}</Heading>
-              <div>
+              <div className="section-content">
                 {section.items.map((item, ii) => {
                   return section.renderItem
                     ? section.renderItem(section, item, ii)

@@ -7,6 +7,53 @@
 @import "~bulma/sass/grid/_all.sass";
 @import "~bulma/sass/layout/_all.sass";
 
+.app-content {
+  .title {
+  }
+
+  .section {
+    padding: 2em 1em 0em 1em;
+    .section-content {
+      .item {
+        margin-left: 2em;
+        margin-bottom: 1em;
+        .icon {
+          display: inline-block;
+          font-size: 1em;
+          margin-left: -1.5em;
+          vertical-align: middle;
+        }
+        .text-time {
+          color: $primary;
+        }
+        .text-label {
+          font-weight: bolder;
+          display: inline-block;
+        }
+        .examples {
+          display: block;
+          .example {
+            display: inline;
+          }
+        }
+        .link {
+          color: $primary;
+          &.link1 {
+          }
+          &.link2 {
+          }
+        }
+        .text {
+          &.text1 {
+          }
+          &.text2 {
+          }
+        }
+      }
+    }
+  }
+}
+
 .hero {
   .hero-foot {
     .tabs {
