@@ -7,7 +7,6 @@ import {
   Footer,
   Heading,
   Hero,
-  Media,
   Section,
   Tabs,
   Tag,
@@ -21,7 +20,7 @@ import itemsContact from "./items/contact";
 import itemsSkill from "./items/skill";
 import itemsWork from "./items/work";
 
-import { itemsProject, tags, outputs, statuses } from "./items/project";
+import { itemsProject, tags, outputs, statuses, links } from "./items/project";
 
 import React, { useState, useEffect } from "react";
 
@@ -108,11 +107,17 @@ const renderItemProject = (section, item, ii) => {
         </Card.Content>
         <Card.Footer>
           <Button.Group position="right">
-            {Object.keys(item.links).map((linkKey) => {
-              return (
-                <Button key={linkKey} color="primary" size="small">
-                  {linkKey}
+            {item.links.map((link, li) => {
+              const linkType = links.find((l) => l.id === link.type);
+              return linkType ? (
+                <Button outlined key={li} color="primary" size="small">
+                  <a href={link.value}>
+                    <span className="icon">{linkType.icon}</span>
+                    <span className="label">{linkType.label}</span>
+                  </a>
                 </Button>
+              ) : (
+                <span />
               );
             })}
           </Button.Group>

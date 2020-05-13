@@ -64,8 +64,8 @@
 
             .tag {
               margin: 0.1rem;
-              color: black;
-              border: 2px solid black;
+              color: white;
+              border: 0px solid black;
               border-radius: 6px;
               font-size: 0.8em;
               font-weight: bold;
@@ -98,6 +98,19 @@
             .buttons {
               width: 100%;
               text-align: end;
+              .button {
+                a {
+                  span {
+                    display: inline-block;
+                    color: $link;
+                    font-size: 1em;
+                    vertical-align: middle;
+                    &.icon {
+                      margin-top: 0.2rem;
+                    }
+                  }
+                }
+              }
             }
           }
         }
