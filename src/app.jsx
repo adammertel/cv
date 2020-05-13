@@ -1,11 +1,16 @@
 import {
-  Section,
-  Tabs,
-  Hero,
+  Button,
+  Card,
+  Columns,
   Container,
   Content,
-  Heading,
   Footer,
+  Heading,
+  Hero,
+  Media,
+  Section,
+  Tabs,
+  Tag,
 } from "react-bulma-components";
 
 import { FaBook, FaHammer, FaPuzzlePiece } from "react-icons/fa";
@@ -15,6 +20,8 @@ import itemsStudy from "./items/study";
 import itemsContact from "./items/contact";
 import itemsSkill from "./items/skill";
 import itemsWork from "./items/work";
+
+import { itemsProject, tags, outputs, statuses } from "./items/project";
 
 import React, { useState, useEffect } from "react";
 
@@ -40,6 +47,77 @@ const renderItemSkill = (section, item, ii) => {
           );
         })}
       </div>
+    </div>
+  );
+};
+
+const renderItemProject = (section, item, ii) => {
+  return (
+    <div className="item-project" key={ii}>
+      <Card>
+        <Card.Image
+          size="4by3"
+          src="http://bulma.io/images/placeholders/1280x960.png"
+        />
+        <Card.Content>
+          <div className="statuses">
+            {item.status.map((statusId) => {
+              const status = statuses.find((s) => s.id === statusId);
+              return (
+                <Tag
+                  className="status"
+                  key={status.id}
+                  style={{ backgroundColor: status.color }}
+                >
+                  {status.label}
+                </Tag>
+              );
+            })}
+          </div>
+          <div className="outputs">
+            {item.output.map((outputId) => {
+              const output = outputs.find((o) => o.id === outputId);
+              return (
+                <Tag
+                  className="output"
+                  key={output.id}
+                  style={{ backgroundColor: output.color }}
+                >
+                  {output.label}
+                </Tag>
+              );
+            })}
+          </div>
+          <div className="text-time">{item.time}</div>
+          <div className="text-label">{item.label}</div>
+          <div className="text">{item.text}</div>
+          <div className="tags">
+            {item.tags.map((tagId) => {
+              const tag = tags.find((t) => t.id === tagId);
+              return (
+                <Tag
+                  className=""
+                  key={tag.id}
+                  style={{ backgroundColor: tag.color }}
+                >
+                  {tag.label}
+                </Tag>
+              );
+            })}
+          </div>
+        </Card.Content>
+        <Card.Footer>
+          <Button.Group position="right">
+            {Object.keys(item.links).map((linkKey) => {
+              return (
+                <Button key={linkKey} color="primary" size="small">
+                  {linkKey}
+                </Button>
+              );
+            })}
+          </Button.Group>
+        </Card.Footer>
+      </Card>
     </div>
   );
 };
@@ -108,7 +186,12 @@ const sections = [
     items: itemsSkill,
     renderItem: renderItemSkill,
   },
-  { title: "Projects", items: [], icon: <FaPuzzlePiece /> },
+  {
+    title: "Projects",
+    items: itemsProject,
+    icon: <FaPuzzlePiece />,
+    renderItem: renderItemProject,
+  },
 ];
 
 const App = (props) => {
@@ -177,11 +260,33 @@ const App = (props) => {
             >
               <Heading>{section.title}</Heading>
               <div className="section-content">
-                {section.items.map((item, ii) => {
-                  return section.renderItem
-                    ? section.renderItem(section, item, ii)
-                    : false;
-                })}
+                {section.title !== "Projects" ? (
+                  section.items.map((item, ii) =>
+                    section.renderItem(section, item, ii)
+                  )
+                ) : (
+                  <div className="projects-wrapper">
+                    <Columns>
+                      {section.items.map((item, ii) => {
+                        return (
+                          <Columns.Column
+                            key={ii}
+                            desktop={{ size: "one-third" }}
+                            tablet={{ size: "half" }}
+                            widescreen={{
+                              size: "one-quarter",
+                            }}
+                            fullhd={{
+                              size: "one-quarter",
+                            }}
+                          >
+                            {section.renderItem(section, item, ii)}
+                          </Columns.Column>
+                        );
+                      })}
+                    </Columns>
+                  </div>
+                )}
               </div>
             </Section>
           );

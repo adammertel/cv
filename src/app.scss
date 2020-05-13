@@ -52,7 +52,55 @@
 
     .section {
       padding: 3em 1em 0em 1em;
+
       .section-content {
+        .item-project {
+          .card-content {
+            padding: 1rem;
+            font-size: 0.8em;
+            .text {
+              margin-bottom: 0.5em;
+            }
+
+            .tag {
+              margin: 0.1rem;
+              color: black;
+              border: 2px solid black;
+              border-radius: 6px;
+              font-size: 0.8em;
+              font-weight: bold;
+            }
+
+            .statuses {
+              position: absolute;
+              top: 0.5em;
+              right: 0.5em;
+              text-align: end;
+            }
+            .outputs {
+              position: absolute;
+              top: 2.5em;
+              right: 0.5em;
+              text-align: end;
+            }
+
+            .text-label {
+              font-size: 1.2em;
+              font-weight: bold;
+            }
+
+            .text-time {
+              color: $primary;
+            }
+          }
+          .card-footer {
+            padding: 0.5em;
+            .buttons {
+              width: 100%;
+              text-align: end;
+            }
+          }
+        }
         .item {
           margin-left: 2em;
           margin-bottom: 1em;
