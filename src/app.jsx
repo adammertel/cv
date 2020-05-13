@@ -13,6 +13,7 @@ import {
 } from "react-bulma-components";
 
 import { FaBook, FaHammer, FaPuzzlePiece } from "react-icons/fa";
+import { RiFocus2Line } from "react-icons/ri";
 import { MdPermContactCalendar, MdSchool, MdWork } from "react-icons/md";
 
 import itemsStudy from "./items/study";
@@ -113,7 +114,7 @@ const renderItemProject = (section, item, ii) => {
             {item.links.map((link, li) => {
               const linkType = links.find((l) => l.id === link.type);
               return linkType ? (
-                <Button outlined key={li} color="primary" size="small">
+                <Button key={li} color="primary" size="small">
                   <a href={link.value}>
                     <span className="icon">{linkType.icon}</span>
                     <span className="label">{link.text || linkType.label}</span>
@@ -175,6 +176,47 @@ const sections = [
         text1: "MUNI, Brno, Czech Republic",
       },
     ],
+  },
+  {
+    title: "Topics",
+    icon: <RiFocus2Line />,
+    items: [
+      {
+        label: "Analytical GIS and complex spatial systems",
+        text1:
+          "Processing, integrating and storing geospatial data, creating models and preparing analyses",
+      },
+      {
+        label: "Interactive (geo)visualization",
+        text1:
+          "Development and evaluation of interactive visualization methods for spatial/temporal/relational datasets",
+      },
+      {
+        label: "Web cartography and tool development",
+        text1:
+          "Development of effective and modern web-based and map-centric applications and tools",
+      },
+      {
+        label: "Visual Analysis of Spatiotemporal data and data exploration",
+        text1:
+          "Exploring and analyzing uncertain, heterogeneous, large, and multidimensional data",
+      },
+      {
+        label: "GIS and environment",
+        text1: "Modeling environment dataset",
+      },
+      {
+        label: "Application of GIS in the urban environment",
+        text1:
+          "Using methods of GIS visualization and analysis for topics relative to urbanism - mobility, demography, housing, criminality, quality of life, health...",
+      },
+      {
+        label: "Spatial Humanities",
+        text1:
+          "Handling spatial data in humanities research - archaeology, historical science, musicology...",
+      },
+    ],
+    renderItem: renderItemDefault,
   },
   {
     title: "Work Experience",

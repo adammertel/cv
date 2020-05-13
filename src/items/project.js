@@ -475,7 +475,7 @@ export var itemsProject = [
     ],
   },
   {
-    time: "2015",
+    time: "2018",
     label: "Last.fm analysis",
     text:
       "Analyses of music preferences based on genres, geographical location...",
