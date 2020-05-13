@@ -8,6 +8,14 @@
 @import "~bulma/sass/layout/_all.sass";
 
 #app {
+  .hero {
+    background-image: url("./pictures/hero.png");
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $primary;
+    background-position-y: bottom;
+  }
   .content-section#Contact {
     .avatar {
       img {
@@ -91,7 +99,7 @@
   }
 
   .app-content {
-    margin-bottom: 30em;
+    margin-bottom: 3em;
     .title {
     }
 
