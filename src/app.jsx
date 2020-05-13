@@ -20,6 +20,8 @@ import itemsContact from "./items/contact";
 import itemsSkill from "./items/skill";
 import itemsWork from "./items/work";
 
+import images from "./pictures/*.png";
+
 import { itemsProject, tags, outputs, statuses, links } from "./items/project";
 
 import React, { useState, useEffect } from "react";
@@ -55,8 +57,9 @@ const renderItemProject = (section, item, ii) => {
     <div className="item-project" key={ii}>
       <Card>
         <Card.Image
-          size="4by3"
-          src="http://bulma.io/images/placeholders/1280x960.png"
+          clipped
+          alt={"title image of the project of " + item.label}
+          src={images[item.image]}
         />
         <Card.Content>
           <div className="statuses">
@@ -276,13 +279,15 @@ const App = (props) => {
                         return (
                           <Columns.Column
                             key={ii}
-                            desktop={{ size: "one-third" }}
-                            tablet={{ size: "half" }}
+                            mobile={{ size: 12 }}
+                            tablet={{ size: 6 }}
+                            touch={{ size: 6 }}
+                            desktop={{ size: 4 }}
                             widescreen={{
-                              size: "one-quarter",
+                              size: 4,
                             }}
                             fullhd={{
-                              size: "one-quarter",
+                              size: 3,
                             }}
                           >
                             {section.renderItem(section, item, ii)}

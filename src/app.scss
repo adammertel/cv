@@ -65,7 +65,7 @@
             .tag {
               margin: 0.1rem;
               color: white;
-              border: 0px solid black;
+              border: 1px solid white;
               border-radius: 6px;
               font-size: 0.8em;
               font-weight: bold;
@@ -103,7 +103,7 @@
                   span {
                     display: inline-block;
                     color: $link;
-                    font-size: 1em;
+                    font-size: 0.9em;
                     vertical-align: middle;
                     &.icon {
                       margin-top: 0.2rem;
