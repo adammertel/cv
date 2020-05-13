@@ -116,7 +116,7 @@ const renderItemProject = (section, item, ii) => {
                 <Button outlined key={li} color="primary" size="small">
                   <a href={link.value}>
                     <span className="icon">{linkType.icon}</span>
-                    <span className="label">{linkType.label}</span>
+                    <span className="label">{link.text || linkType.label}</span>
                   </a>
                 </Button>
               ) : (

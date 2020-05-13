@@ -55,6 +55,17 @@
 
       .section-content {
         .item-project {
+          .card-image {
+            .image {
+              img {
+                display: flex;
+                height: 200px;
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+              }
+            }
+          }
           .card-content {
             padding: 1rem;
             font-size: 0.8em;
