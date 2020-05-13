@@ -7,6 +7,7 @@ import {
   Footer,
   Heading,
   Hero,
+  Image,
   Section,
   Tabs,
   Tag,
@@ -175,6 +176,11 @@ const sections = [
         label: "PhD in Cartography, geoinformatics and remote sensing",
         text1: "MUNI, Brno, Czech Republic",
       },
+      {
+        time: "Sep 2013 – Juny 2015",
+        label: "Mgr in Cartography, geoinformatics and remote sensing",
+        text1: "MUNI, Brno, Czech Republic",
+      },
     ],
   },
   {
@@ -310,11 +316,24 @@ const App = (props) => {
             >
               <Heading>{section.title}</Heading>
               <div className="section-content">
-                {section.title !== "Projects" ? (
-                  section.items.map((item, ii) =>
-                    section.renderItem(section, item, ii)
-                  )
-                ) : (
+                {section.title === "Contact" ? (
+                  <Columns>
+                    <Columns.Column size={6}>
+                      {section.items.map((item, ii) =>
+                        section.renderItem(section, item, ii)
+                      )}
+                    </Columns.Column>
+                    <Columns.Column size={6}>
+                      <div className="avatar">
+                        <Image
+                          rounded={true}
+                          src="https://avatars2.githubusercontent.com/u/12932677?s=400&u=f9149742d8141baf4e7fafc141d9d642ffac9904&v=4"
+                        />
+                      </div>
+                    </Columns.Column>
+                  </Columns>
+                ) : null}
+                {section.title === "Projects" ? (
                   <div className="projects-wrapper">
                     <Columns>
                       {section.items.map((item, ii) => {
@@ -338,7 +357,12 @@ const App = (props) => {
                       })}
                     </Columns>
                   </div>
-                )}
+                ) : null}
+                {section.title !== "Projects" && section.title !== "Contact"
+                  ? section.items.map((item, ii) =>
+                      section.renderItem(section, item, ii)
+                    )
+                  : null}
               </div>
             </Section>
           );

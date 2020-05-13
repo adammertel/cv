@@ -8,6 +8,24 @@
 @import "~bulma/sass/layout/_all.sass";
 
 #app {
+  .content-section#Contact {
+    .avatar {
+      img {
+        margin-top: -2em;
+        max-height: 300px;
+        max-width: 300px;
+      }
+    }
+
+    .text-label {
+      font-weight: bolder;
+      display: inline-block;
+    }
+    .text {
+      margin-left: 0.5em;
+      display: inline-block;
+    }
+  }
   .tabs {
     position: sticky;
     margin-bottom: 0;
