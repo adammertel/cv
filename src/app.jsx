@@ -219,7 +219,7 @@ const sections = [
     renderItem: renderItemDefault,
   },
   {
-    title: "Work Experience",
+    title: "Work",
     icon: <MdWork />,
     items: itemsWork,
     renderItem: renderItemDefault,

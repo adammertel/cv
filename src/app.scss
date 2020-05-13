@@ -19,26 +19,54 @@
     .tab:last-of-type a {
       border-right: 0px;
     }
-    .tab {
-      a {
-        border-width: 0px 2px 0px 2px;
-        border-color: $white;
-        font-weight: bolder;
-        border-radius: 0;
-        color: white;
-        background-color: $grey;
-
-        .tab-part {
-          display: inline;
-          &.tab-icon {
-            margin-right: 0.5em;
+    @media only screen and (min-width: 1000px) {
+      .tab {
+        a {
+          padding: 0.5em 1em;
+          .tab-part {
             font-size: 1em;
-            margin-top: 0.1em;
-          }
-          &.tab-title {
           }
         }
       }
+    }
+    @media only screen and (max-width: 1000px) {
+      .tab {
+        a {
+          padding: 0.4em 0.8em;
+          .tab-part {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 700px) {
+      .tab {
+        a {
+          padding: 0.3em 1em;
+          .tab-title {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .tab {
+    a {
+      border-width: 0px 2px 0px 2px;
+      border-color: $white;
+      font-weight: bolder;
+      border-radius: 0;
+      color: white;
+      background-color: $grey;
+
+      .tab-part {
+        display: inline;
+        &.tab-icon {
+          margin-right: 0.5em;
+          margin-top: 0.1em;
+        }
+      }
+
       &.is-active a {
         background-color: $primary;
       }
