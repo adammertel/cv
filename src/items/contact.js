@@ -7,7 +7,8 @@ var itemsContact = [
   {
     label: "Origin",
     text1: "Nová Dubnica, Slovakia",
-    link1: false,
+    link1:
+      "https://www.google.com/maps/place/018+51+Nov%C3%A1+Dubnica,+Slovakia/@48.9293555,18.1032084,23050m/data=!3m2!1e3!4b1!4m5!3m4!1s0x4714983afe6eae27:0x400f7d1c6971b70!8m2!3d48.9369734!4d18.1430307",
     icon: <FaHome />,
   },
   {
@@ -29,9 +30,9 @@ var itemsContact = [
     icon: <FaGithub />,
   },
   {
-    label: "Academia",
-    text1: "AMertel",
-    link1: "https://muni.academia.edu/AMertel",
+    label: "Research Gate",
+    text1: "Adam_Mertel2",
+    link1: "https://www.researchgate.net/profile/Adam_Mertel2",
     icon: <FaResearchgate />,
   },
   {
