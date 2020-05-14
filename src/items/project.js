@@ -324,7 +324,7 @@ export var itemsProject = [
     label: "ArchaeoDB",
     text:
       "Web-based application to collect and analyze archaeological data. Works with real-time database (rethinkDB), node and socket.io.",
-    image: "",
+    image: "archaeodb",
     status: [2],
     output: [2],
     tags: [1, 3, 7, 15],
