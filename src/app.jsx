@@ -245,7 +245,7 @@ const sections = [
   },
   {
     title: "Projects",
-    items: itemsProject,
+    items: itemsProject.sort((a, b) => (a.time > b.time ? -1 : 1)),
     icon: <FaPuzzlePiece />,
     renderItem: renderItemProject,
   },

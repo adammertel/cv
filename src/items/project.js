@@ -89,7 +89,7 @@ export var itemsProject = [
     ],
   },
   {
-    time: "2018 — 2019",
+    time: "2018—2019",
     label: "Historical Geocoding Assistant",
     text:
       "Open source browser-based application for assigning geographic coordinates in a more convenient and faster way than copy-pasting them from services such as Google Maps. The application was designed with historical projects in mind but is suitable for any geocoding work.",
@@ -194,7 +194,7 @@ export var itemsProject = [
     ],
   },
   {
-    time: "2017 — 2020",
+    time: "2017—2020",
     label: "Analysis of the spread of Egyptian cults in Eastern Mediteranean",
     text:
       "Application of formalized methods (network analysis, spatial analysis, environmental modeling) to understand a complex historical phenomenon of the ancient Egyptian cults. Two studies summarizing th findings were published in PLOS ONE journal.",
@@ -223,7 +223,7 @@ export var itemsProject = [
   },
 
   {
-    time: "2017 — 2018",
+    time: "2017—2018",
     label: "Simulations and ABM in Roman World",
     text:
       "Study explores the spread of Christianity as diffusive process constrained by physical travel in the Roman Empire - implementing the transportation network with city population estimates and network-theoretical approach to analyze the spreading process.",
@@ -240,7 +240,7 @@ export var itemsProject = [
     ],
   },
   {
-    time: "2014 — 2017",
+    time: "2014—2017",
     label: "Archaeological database of Bohemian-Moravian Highlands",
     text:
       "A database to display, edit and store complex archaeological data from the area of Bohemian-Moravian Highlands. Based on these data and expertise, a research study was published which applied graph-based method to model within our research area, the process of human activities in spacetime.",
@@ -261,7 +261,7 @@ export var itemsProject = [
     ],
   },
   {
-    time: "",
+    time: "2018—219",
     label: "Analytical dashboard for radio broadcasting data",
     text:
       "Web-based dashboard created for the Czech Radio to explore and analyse broadcasting data. Built with React, Vega and REST in a close cooperation with the analytical team.",
