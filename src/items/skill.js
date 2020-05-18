@@ -3,6 +3,7 @@ import {
   FaDatabase,
   FaChartLine,
   FaCode,
+  FaUserAlt,
 } from "react-icons/fa";
 
 import React from "react";
@@ -52,7 +53,7 @@ var itemsSkill = [
     ],
   },
   {
-    label: "Visualization frameworks and libraries",
+    label: "Visualization frameworks and libraries (+3D)",
     icon: <FaChartLine />,
     examples: [
       { name: "D3", link: "" },
@@ -90,7 +91,7 @@ var itemsSkill = [
       { name: "Grass", link: "" },
       { name: "GDAL", link: "" },
       { name: "R", link: "" },
-      { name: "OSGeo", link: "" },
+      { name: "OGC services", link: "" },
       { name: "JTS", link: "" },
       { name: "turf", link: "" },
     ],
@@ -107,8 +108,7 @@ var itemsSkill = [
     label: "Relational",
     icon: <FaDatabase />,
     examples: [
-      { name: "PostgreSQL", link: "" },
-      { name: "PostGIS", link: "" },
+      { name: "PostgreSQL (+PostGIS)", link: "" },
       { name: "MariaDB", link: "" },
       { name: "MySQL", link: "" },
     ],
@@ -128,7 +128,34 @@ var itemsSkill = [
     examples: [
       { name: "Neo4j", link: "" },
       { name: "REST", link: "" },
-      { name: "graphQL", link: "" },
+      { name: "GraphQL", link: "" },
+      { name: "Sockets.io", link: "" },
+    ],
+  },
+  {
+    label: "Computers",
+    icon: <FaUserAlt />,
+    examples: [
+      { name: "Unix", link: "" },
+      { name: "Basic knowledge of servers", link: "" },
+    ],
+  },
+  {
+    label: "Languages",
+    icon: <FaUserAlt />,
+    examples: [
+      { name: "English (C1)", link: "" },
+      { name: "German (B2)", link: "" },
+      { name: "French (A1)", link: "" },
+      { name: "Slovak | Czech (Native)", link: "" },
+    ],
+  },
+  {
+    label: "Science",
+    icon: <FaUserAlt />,
+    examples: [
+      { name: "Academic writing", link: "" },
+      { name: "Academic research", link: "" },
     ],
   },
 ];
