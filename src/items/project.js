@@ -9,9 +9,9 @@ export var links = [
 ];
 
 export var statuses = [
-  { id: 1, label: "in-progress", color: "#737373" },
-  { id: 2, label: "done", color: "#252525" },
-  { id: 3, label: "experimental", color: "#bdbdbd" },
+  { id: 1, label: "in-progress", color: "#bdbdbd" },
+  { id: 2, label: "done", color: "white" },
+  { id: 3, label: "experimental", color: "#737373" },
 ];
 
 export var outputs = [
@@ -99,7 +99,7 @@ export var itemsProject = [
     time: "2019",
     label: "Map of Lollards",
     text:
-      "Map shows the places of origin of English dissidents under investigation for taking part in the revolts of 1414 or 1431, related to Lollardy, or holding various heterodox opinions that are commonly referred to as Lollard.",
+      "This map shows the places of origin of English dissidents under investigation for taking part in the revolts of 1414 or 1431, related to Lollardy, or holding various heterodox opinions that are commonly referred to as Lollard. Map clusters-based visualization to group conflicting markers.",
     image: "lollards",
     status: [2],
     output: [3],
@@ -119,7 +119,7 @@ export var itemsProject = [
     time: "2019",
     label: "Map of Cathar Houses",
     text:
-      "This interactive map shows settlements in Languedoc in which Cathar religious, known as heretici in the inquisitorial registers, are attested to have dwelt publicly in houses they owned or rented.",
+      "This interactive map shows settlements in Languedoc in which Cathar religious, known as heretici in the inquisitorial registers, are attested to have dwelt publicly in houses they owned or rented. The user is able to filter the content based on temporal information.",
     image: "cathar-houses",
     status: [2],
     output: [3],
