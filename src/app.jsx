@@ -209,13 +209,13 @@ const sections = [
           "Exploring and analyzing uncertain, heterogeneous, large, and multidimensional data",
       },
       {
-        label: "GIS and environment",
-        text1: "Modeling environment dataset",
+        label: "Environment modeling",
+        text1: "Using GIS methods to model and analyse environmental datasets",
       },
       {
         label: "Application of GIS in the urban environment",
         text1:
-          "Using methods of GIS visualization and analysis for topics relative to urbanism - mobility, demography, housing, criminality, quality of life, health...",
+          "Visualizations and analysis of complex data relative to urbanism - mobility, demography, housing, criminality, quality of life, health",
       },
       {
         label: "Spatial Humanities",
