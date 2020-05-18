@@ -69,6 +69,7 @@ const renderItemProject = (section, item, ii) => {
               const status = statuses.find((s) => s.id === statusId);
               return (
                 <Tag
+                  color="light"
                   className="status"
                   key={status.id}
                   style={{ backgroundColor: status.color }}

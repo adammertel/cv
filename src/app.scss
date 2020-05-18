@@ -110,8 +110,10 @@
         .item-project {
           .card {
             height: 35em;
+            border: 2px solid $grey-dark;
           }
           .card-image {
+            border-bottom: 2px solid $grey-dark;
             .image {
               img {
                 display: flex;
@@ -132,11 +134,11 @@
 
             .tag {
               margin: 0.1rem;
-              color: black;
-              border: 2px solid black;
+              border: 2px solid $grey-dark;
               border-radius: 6px;
               font-size: 0.8em;
               font-weight: bold;
+              box-shadow: 0px 0px 0px 2px $white;
             }
 
             .statuses {
@@ -167,7 +169,7 @@
             position: absolute;
             bottom: 0;
             width: 100%;
-            background-color: lightgrey;
+            background-color: $grey-dark;
             .buttons {
               width: 100%;
               text-align: end;
