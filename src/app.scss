@@ -11,7 +11,7 @@
   .hero {
     background-image: url("./pictures/hero.png");
     background-position-x: right;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: contain;
     background-color: $primary;
     background-position-y: bottom;
