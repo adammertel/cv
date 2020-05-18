@@ -57,13 +57,31 @@ export var itemsProject = [
     time: "2018",
     label: "Baptisteries",
     text:
-      "This interactive map visualizes a database of Christian baptisteries built between the 3rd and 12th centuries. The database is a digital adaptation and formalization of the most complete (as of 2017) catalogue of baptisteries by Sebastian Ristow (Frühchristliche Baptisterien, Münster: Aschendorffsche Verlagsbuchhandlung, 1998)",
+      "This interactive map visualizes a database of Christian baptisteries built between the 3rd and 12th centuries. The database is a digital adaptation and formalization of the most complete (as of 2017) catalogue of baptisteries by Sebastian Ristow (Frühchristliche Baptisterien, Münster: Aschendorffsche Verlagsbuchhandlung, 1998). Additional to the interactive web map, three static analytical maps were created.",
     image: "baptisteries",
     status: [2],
     output: [3],
     tags: [1, 9, 3, 11, 13],
     links: [
       { type: 1, value: "https://dissinet.cz/maps/baptisteries/" },
+      {
+        type: 1,
+        text: "map1",
+        value:
+          "https://github.com/adammertel/baptisteries.map/blob/master/public/static_piscina.png",
+      },
+      {
+        type: 1,
+        text: "map2",
+        value:
+          "https://github.com/adammertel/baptisteries.map/blob/master/public/static_shape.png",
+      },
+      {
+        type: 1,
+        text: "map3",
+        value:
+          "https://github.com/adammertel/baptisteries.map/blob/master/public/static_multiples.png",
+      },
       {
         type: 2,
         value: "https://github.com/adammertel/baptisteries.map",
@@ -99,7 +117,7 @@ export var itemsProject = [
     time: "2019",
     label: "Map of Lollards",
     text:
-      "This map shows the places of origin of English dissidents under investigation for taking part in the revolts of 1414 or 1431, related to Lollardy, or holding various heterodox opinions that are commonly referred to as Lollard. Map clusters-based visualization to group conflicting markers.",
+      "This map shows the places of origin of English dissidents under investigation for taking part in the revolts of 1414 or 1431, related to Lollardy, or holding various heterodox opinions that are commonly referred to as Lollard. Map uses the clusters-based visualization method to group conflicting markers.",
     image: "lollards",
     status: [2],
     output: [3],
@@ -119,7 +137,7 @@ export var itemsProject = [
     time: "2019",
     label: "Map of Cathar Houses",
     text:
-      "This interactive map shows settlements in Languedoc in which Cathar religious, known as heretici in the inquisitorial registers, are attested to have dwelt publicly in houses they owned or rented. The user is able to filter the content based on temporal information.",
+      "This interactive map shows settlements in Languedoc in which Cathar religious, known as heretici in the inquisitorial registers, are attested to have dwelt publicly in houses they owned or rented. The user is able to filter the content based on temporal information to see the spatiotemporal pattern of the phenomenon.",
     image: "cathar-houses",
     status: [2],
     output: [3],
@@ -139,7 +157,7 @@ export var itemsProject = [
     time: "2019",
     label: "DISSINET visualizations",
     text:
-      "A list of visualizations made for DISSINET project. Consists of network visualizations, maps, chord diagrams, parallel coordinates...",
+      "A list of visualizations made for DISSINET project to visually support and describe some of the base concepts of this project. Consists of network visualizations, maps, chord diagrams, parallel coordinates...",
     image: "dissinet-vis",
     status: [2],
     output: [3],
@@ -179,7 +197,7 @@ export var itemsProject = [
     time: "2017 — 2020",
     label: "Analysis of the spread of Egyptian cults in Eastern Mediteranean",
     text:
-      "A study applying formalized methods (network analysis, spatial analysis, environmental modeling) to understand a complex historical phenomenon.",
+      "Application of formalized methods (network analysis, spatial analysis, environmental modeling) to understand a complex historical phenomenon of the ancient Egyptian cults. Two studies summarizing th findings were published in PLOS ONE journal.",
     image: "egypt2",
     status: [2],
     output: [1, 3, 4],
@@ -246,7 +264,7 @@ export var itemsProject = [
     time: "",
     label: "Analytical dashboard for radio broadcasting data",
     text:
-      "Web-based dashboard created for the Czech Radio to explore and analyse broadcasting data. Built with React, Vega and REST.",
+      "Web-based dashboard created for the Czech Radio to explore and analyse broadcasting data. Built with React, Vega and REST in a close cooperation with the analytical team.",
     image: "cro",
     status: [2, 3],
     output: [2],
@@ -257,7 +275,7 @@ export var itemsProject = [
     time: "2018",
     label: "Map framework for the project of Digitizing Patterns of Power",
     text:
-      "An extensive Web-GIS environment to explore spatial and relational data from the project of DPP (Digitizing Patterns of Power) based on Austrian Academy of Science.",
+      "An extensive Web-GIS environment that allows exploration of spatial and relational data from the project of DPP (Digitizing Patterns of Power). Supervised by the Austrian Academy of Science.",
     image: "dpp",
     status: [2],
     output: [1, 2, 3],
@@ -273,7 +291,7 @@ export var itemsProject = [
     time: "2018 — 2019",
     label: "Albina",
     text:
-      "An Interreg project created to centralize information about avalanche conditions in Alps. Consists of actual bulletins, weather maps and models.",
+      "An Interreg project created to centralize information about avalanche conditions in Alps. Consists of actual bulletins, weather maps and models. Built in a cooperation with University of Vienna and experts from Tyrol and Trentino regions.",
     image: "albina",
     status: [2],
     output: [2],
@@ -288,7 +306,8 @@ export var itemsProject = [
   {
     time: "2018 — 2019",
     label: "BesteLagen",
-    text: "Map application to visualize, promote and navigate in wine areas.",
+    text:
+      "Map application created in Leaflet.js, MariaDB and React to visualize, promote and navigate in the wine areas. Created with the cooperation of University of Vienna and Beste Lagen company.",
     image: "bestelagen",
     status: [2],
     output: [2],
@@ -299,7 +318,7 @@ export var itemsProject = [
     time: "2014 — 2015",
     label: "Application for study of low-emission zones",
     text:
-      "Application created with the cooperation with CDV (Center of Transport Research) to analyze possibilities and implications of applying low-emission zones.",
+      "A support map application created in the cooperation with CDV (Center of Transport Research) to analyze possibilities and implications of applying low-emission zones. The analysis and development of the tool was a part of the master's thesis.",
     image: "emissions",
     status: [2, 3],
     output: [1, 2, 3, 4],
@@ -310,7 +329,7 @@ export var itemsProject = [
     time: "2017",
     label: "Gods on the barge",
     text:
-      "Game / interactive simulation inspired by the interdisciplinary GEHIR project (gehir.phil.muni.cz). Player plays as one selected godness and tries to spread his/her religion in the area.",
+      "Game / interactive simulation inspired by the interdisciplinary project of GEHIR (gehir.phil.muni.cz). The users play as one selected deity and try to spread his/her religion in the area using merchant ships, placing armies, building infrastructure and using special powers.",
     image: "godsonthebarge",
     status: [2, 3],
     output: [1, 2],
@@ -323,7 +342,7 @@ export var itemsProject = [
     time: "2019",
     label: "ArchaeoDB",
     text:
-      "Web-based application to collect and analyze archaeological data. Works with real-time database (rethinkDB), node and socket.io.",
+      "Web-based application to edit, visualize, analyze and export archaeological data collected by the Czech Academy of Science. Built on real-time rethinkDB, node and socket.io, React and Leaflet.js.",
     image: "archaeodb",
     status: [2],
     output: [2],
@@ -334,7 +353,7 @@ export var itemsProject = [
     time: "2020",
     label: "Dissinet Database",
     text:
-      "Web-based environment to collect historical data and store and integrate them in a graph database (neo4J). Essential part of the DISSINET project (dissinet.cz) to analyze the content of historical textual sources.",
+      "Web-based environment to collect historical data and store and integrate them into a graph database (neo4J). Essential part of the DISSINET project (dissinet.cz) to analyze the content of historical textual sources.",
     image: "ddb",
     status: [1],
     output: [2],
@@ -345,7 +364,7 @@ export var itemsProject = [
     time: "2019",
     label: "Monasteries",
     text:
-      "Side-project of DISSINET (dissinet.cz) to collect, integrate and analyze extensive spatiotemporal data about monasteries.",
+      "Side-project of DISSINET (dissinet.cz) to mine, integrate and analyze extensive spatiotemporal data about medieval monasteries from various sources, e.g. Wikipedia, local projects, books, maps...",
     image: "monasteries",
     status: [1],
     output: [1],
@@ -360,9 +379,9 @@ export var itemsProject = [
   },
   {
     time: "2018",
-    label: "Leaflet.RegularGridCluster extension",
+    label: "RegularGridCluster extension for Leaflet.js",
     text:
-      "Leaflet plugin that implements grid-style visualization and clustering method.",
+      "Leaflet plugin that implements grid-style visualization and clustering method. Suitable for making analytical maps comparing two datasets.",
     image: "regulargridcluster",
     status: [2],
     output: [3],
@@ -378,7 +397,7 @@ export var itemsProject = [
     time: "2018",
     label: "Leaflet.MarkerCluster.PlacementStrategies extension",
     text:
-      "Subplugin that impelements new possibilities to place markers for Leaflet.MarkerCluster",
+      "Subplugin that impelements new possibilities to place markers for Leaflet.MarkerCluster.",
     image: "leafletplacement",
     status: [2],
     output: [3],
@@ -400,7 +419,7 @@ export var itemsProject = [
     time: "2019",
     label: "Leaflet.Control.Select extension",
     text:
-      "A plugin for Leaflet library that adds a new menu-like control component.",
+      "A plugin for Leaflet.js library that adds a new menu-like control component.",
     image: "leafletselect",
     status: [2],
     output: [3],
@@ -420,7 +439,7 @@ export var itemsProject = [
     time: "2018",
     label: "Leaflet.MarkerCluster.List extension",
     text:
-      "Subplugin for the Leaflet.MarkerCluster to display clustered child elements in the form of a list.",
+      "Subplugin for the Leaflet.MarkerCluster to display clustered child elements in the form of a list. Suitable mainly for maps in the mobile environment.",
     image: "selectlist",
     status: [2],
     output: [3],
@@ -436,7 +455,7 @@ export var itemsProject = [
     time: "2017",
     label: "My Suburb",
     text:
-      "Hackaton experiment about integrating OSM data into a comprehensive map application displaying the ideal part of the city for based on preferences.",
+      "Hackaton-motivated experimental map application integrating OSM data into to find the ideal part of the city for based on users preferences.",
     image: "suburb",
     status: [3],
     output: [2],
@@ -446,7 +465,8 @@ export var itemsProject = [
   {
     time: "2017",
     label: "Argo Explorer",
-    text: "Exploratory tool for historical Spatiotemporal datasets.",
+    text:
+      "Exploratory tool for historical Spatiotemporal datasets. Visualizes spatial and temporal distributions, allows creating interactive charts, displays different uncertainties...",
     image: "argo",
     status: [1, 3],
     output: [2, 3],
@@ -462,7 +482,7 @@ export var itemsProject = [
     time: "2019",
     label: "Photo Reward",
     text:
-      "A free-time project that should keep you motivated by flashing a nice picture once a time.",
+      "A free-time project. The idea behind is based on the theory that a small reward (in this case, a pretty picture that appears for a few seconds once a time period) may keep you motivated with the long-term task.",
     image: "",
     status: [3],
     output: [2],
@@ -478,7 +498,7 @@ export var itemsProject = [
     time: "2018",
     label: "Last.fm analysis",
     text:
-      "Analyses of music preferences based on genres, geographical location...",
+      "A research started with the cooperation of the department of Musicology to explore data mined from Last.fm API presenting music preferences in the world. A set of spatial and network-based analysis were created to study the distribution of musical genres, geographical location, clustering, spread of music...",
     image: "lastfm",
     status: [3],
     output: [2],
@@ -494,7 +514,7 @@ export var itemsProject = [
     time: "2016",
     label: "GIS data generalization",
     text:
-      "Python and PostGIS based project that generalize geographical data based on brute-force algorythms.",
+      "A research project was investigating the possibilities of generalization of spatial topographical datasets with automated scripts and tools.",
     image: "generalizace",
     status: [3],
     output: [1],
@@ -505,7 +525,7 @@ export var itemsProject = [
     time: "2016",
     label: "Police data analysis",
     text:
-      "Analysis and visualization of the impact of gambling sites on the criminality in the city.",
+      "A study that investigated the possibilities to analyze and visualize the impact of gambling sites on the criminality in the city of Pardubice.",
     image: "police",
     status: [2],
     output: [1, 4],
@@ -522,7 +542,7 @@ export var itemsProject = [
     time: "2015",
     label: "Linking Graph With Map For The Purpose Of Historical Research",
     text:
-      "Expert system that visualizes historical data throught a map, graph, charts and tables at the same time.",
+      "An expert system that was built to examine the idea of the impact of using more forms of data display (map, graph, charts, tables) in the process of exploration of historical datasets.",
     image: "hde",
     status: [3],
     output: [1, 2, 3],
