@@ -29,9 +29,9 @@ export var tags = [
   { id: 4, label: "Python" },
   { id: 5, label: "R" },
   { id: 6, label: "PostGres | PostGIS" },
-  { id: 7, label: "rethinkDB" },
-  { id: 8, label: "mySQL | mariaDB" },
-  { id: 9, label: "d3 | vega" },
+  { id: 7, label: "RethinkDB" },
+  { id: 8, label: "MySQL | MariaDB" },
+  { id: 9, label: "D3 | SVG | Vega" },
   { id: 10, label: "HTML5 Canvas" },
   { id: 11, label: "GIS analysis" },
   { id: 12, label: "network analysis" },
@@ -47,7 +47,7 @@ export var tags = [
   { id: 22, label: "graphs db | neo4J" },
   { id: 23, label: "data mining" },
   { id: 24, label: "data visualization technique" },
-  { id: 25, label: "threeJs" },
+  { id: 25, label: "ThreeJs" },
 ];
 
 tags.forEach((tag) => (tag["color"] = tagColor));
@@ -134,7 +134,7 @@ export var itemsProject = [
     ],
   },
   {
-    time: "2019",
+    time: "2018",
     label: "Map of Cathar Houses",
     text:
       "This interactive map shows settlements in Languedoc in which Cathar religious, known as heretici in the inquisitorial registers, are attested to have dwelt publicly in houses they owned or rented. The user is able to filter the content based on temporal information to see the spatiotemporal pattern of the phenomenon.",
@@ -339,6 +339,17 @@ export var itemsProject = [
     ],
   },
   {
+    time: "2020",
+    label: "Analysis of vegetation diversity",
+    text:
+      "A project of Czech Academy of Sciences analyzing and visualizing spatiotemporal patterns of vegetation diversity in the region of Moravia .",
+    image: "ibot",
+    status: [1],
+    output: [1, 3, 4],
+    tags: [4, 18],
+    links: [,],
+  },
+  {
     time: "2019",
     label: "ArchaeoDB",
     text:
@@ -351,7 +362,7 @@ export var itemsProject = [
   },
   {
     time: "2020",
-    label: "Dissinet Database",
+    label: "inkVisitor",
     text:
       "Web-based environment to collect historical data and store and integrate them into a graph database (neo4J). Essential part of the DISSINET project (dissinet.cz) to analyze the content of historical textual sources.",
     image: "ddb",
@@ -362,7 +373,7 @@ export var itemsProject = [
   },
   {
     time: "2019",
-    label: "Monasteries",
+    label: "Monasteries project",
     text:
       "Side-project of DISSINET (dissinet.cz) to mine, integrate and analyze extensive spatiotemporal data about medieval monasteries from various sources, e.g. Wikipedia, local projects, books, maps...",
     image: "monasteries",
