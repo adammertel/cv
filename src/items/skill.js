@@ -15,30 +15,18 @@ var itemsSkill = [
     examples: [
       { name: "JavaScript", link: "" },
       { name: "TypeScript", link: "" },
-      { name: "GitHub", link: "" },
       { name: "Webpack", link: "" },
-    ],
-  },
-  {
-    label: "FrontEnd frameworks",
-    icon: <FaCode />,
-    examples: [
       { name: "ReactJS", link: "" },
-      { name: "post CSS", link: "" },
-      { name: "Scss / Sass", link: "" },
-      { name: "Bulma", link: "" },
-      { name: "Bootstrap", link: "" },
-      { name: "Tailwind CSS", link: "" },
-      { name: "JQuery", link: "" },
+      { name: "post CSS / SCSS / Sass", link: "" },
+      { name: "Redux / MobX", link: "" },
     ],
   },
   {
     label: "Server-side programming",
     icon: <FaCode />,
     examples: [
-      { name: "NodeJS", link: "" },
-      { name: "Express", link: "" },
-      { name: "Sockets.io", link: "" },
+      { name: "NodeJS / Express", link: "" },
+      { name: "Python", link: "" },
       { name: "Java", link: "" },
     ],
   },
@@ -46,9 +34,9 @@ var itemsSkill = [
     label: "Data analysis",
     icon: <FaCode />,
     examples: [
-      { name: "Pandas", link: "" },
-      { name: "scikit", link: "" },
-      { name: "networkX", link: "" },
+      { name: "Python notebooks - pandas, scikit, numpy...", link: "" },
+      { name: "Network analysis", link: "" },
+      { name: "(Spatial) Data modelling", link: "" },
       { name: "R", link: "" },
     ],
   },
@@ -56,10 +44,9 @@ var itemsSkill = [
     label: "Visualization frameworks and libraries (+3D)",
     icon: <FaChartLine />,
     examples: [
-      { name: "D3", link: "" },
+      { name: "D3 / SVG", link: "" },
       { name: "HTML5 Canvas", link: "" },
-      { name: "Cytoscape", link: "" },
-      { name: "Three.js", link: "" },
+      { name: "3D visualizations - Three.js, babilon...", link: "" },
     ],
   },
   {
@@ -85,11 +72,12 @@ var itemsSkill = [
     ],
   },
   {
-    label: "Analytical GIS libraries",
+    label: "Analytical GIS libraries + services",
     icon: <FaMapMarkedAlt />,
     examples: [
       { name: "Grass", link: "" },
       { name: "GDAL", link: "" },
+      { name: "geopandas", link: "" },
       { name: "R", link: "" },
       { name: "OGC services", link: "" },
       { name: "JTS", link: "" },
@@ -133,11 +121,11 @@ var itemsSkill = [
     ],
   },
   {
-    label: "Computers",
+    label: "Computers, CI",
     icon: <FaUserAlt />,
     examples: [
       { name: "Unix", link: "" },
-      { name: "Basic knowledge of servers", link: "" },
+      { name: "GitHub", link: "" },
     ],
   },
   {
