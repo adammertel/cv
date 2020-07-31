@@ -65,24 +65,6 @@ export var itemsProject = [
     links: [
       { type: 1, value: "https://dissinet.cz/maps/baptisteries/" },
       {
-        type: 1,
-        text: "map1",
-        value:
-          "https://github.com/adammertel/baptisteries.map/blob/master/public/static_piscina.png",
-      },
-      {
-        type: 1,
-        text: "map2",
-        value:
-          "https://github.com/adammertel/baptisteries.map/blob/master/public/static_shape.png",
-      },
-      {
-        type: 1,
-        text: "map3",
-        value:
-          "https://github.com/adammertel/baptisteries.map/blob/master/public/static_multiples.png",
-      },
-      {
         type: 2,
         value: "https://github.com/adammertel/baptisteries.map",
       },
@@ -157,7 +139,7 @@ export var itemsProject = [
     time: "2019",
     label: "DISSINET visualizations",
     text:
-      "A list of visualizations made for DISSINET project to visually support and describe some of the base concepts of this project. Consists of network visualizations, maps, chord diagrams, parallel coordinates...",
+      "A list of visualizations made for DISSINET project to support and describe some of the base concepts of this project. Consists of network visualizations, maps, chord diagrams, parallel coordinates...",
     image: "dissinet-vis",
     status: [2],
     output: [3],
@@ -347,7 +329,7 @@ export var itemsProject = [
     status: [1],
     output: [1, 3, 4],
     tags: [4, 18],
-    links: [,],
+    links: [],
   },
   {
     time: "2019",
@@ -406,7 +388,7 @@ export var itemsProject = [
   },
   {
     time: "2018",
-    label: "Leaflet.MarkerCluster.PlacementStrategies extension",
+    label: "MarkerCluster PlacementStrategies extension for Leaflet.js",
     text:
       "Subplugin that impelements new possibilities to place markers for Leaflet.MarkerCluster.",
     image: "leafletplacement",
@@ -428,7 +410,7 @@ export var itemsProject = [
   },
   {
     time: "2019",
-    label: "Leaflet.Control.Select extension",
+    label: "Control.Select extension for Leaflet.js",
     text:
       "A plugin for Leaflet.js library that adds a new menu-like control component.",
     image: "leafletselect",
