@@ -46,7 +46,7 @@ var itemsSkill = [
     examples: [
       { name: "D3 / SVG", link: "" },
       { name: "HTML5 Canvas", link: "" },
-      { name: "3D visualizations - Three.js, babilon...", link: "" },
+      { name: "3D visualizations - Three.js, Babylon.js...", link: "" },
     ],
   },
   {
@@ -88,7 +88,7 @@ var itemsSkill = [
     label: "Desktop GIS",
     icon: <FaMapMarkedAlt />,
     examples: [
-      { name: "QGIS", link: "qgis.com" },
+      { name: "QGIS", link: "" },
       { name: "ArcGIS", link: "" },
     ],
   },
