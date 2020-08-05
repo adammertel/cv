@@ -243,7 +243,7 @@ export var itemsProject = [
     ],
   },
   {
-    time: "2018—219",
+    time: "2018—2019",
     label: "Analytical dashboard for radio broadcasting data",
     text:
       "Web-based dashboard created for the Czech Radio to explore and analyse broadcasting data. Built with React, Vega and REST in a close cooperation with the analytical team.",
