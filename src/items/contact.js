@@ -14,12 +14,14 @@ var itemsContact = [
   {
     label: "Actual residence",
     text1: "Brno, Czech Republic",
-    link1: false,
+    link1:
+      "https://www.google.com/maps/place/Brno/@49.2021611,16.507921,12z/data=!3m1!4b1!4m5!3m4!1s0x4712943ac03f5111:0x400af0f6614b1b0!8m2!3d49.1950544!4d16.6068649",
     icon: <MdPlace />,
   },
   {
     label: "Education",
-    text1: "PhD in Cartography, geoinformatics and remote sensing (2015-2020)",
+    text1:
+      "PhD in Cartography, geoinformatics and remote sensing, MUNI (2015-2020)",
     link1: "http://geogr.muni.cz/homepage",
     icon: <MdSchool />,
   },
