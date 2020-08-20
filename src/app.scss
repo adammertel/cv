@@ -106,7 +106,8 @@
     }
 
     .section {
-      padding: 3em 1em 0em 1em;
+      padding-top: 1.5em;
+      padding-bottom: 0em;
 
       .section-content {
         .item-project {
@@ -199,7 +200,7 @@
         }
         .item {
           margin-left: 2em;
-          margin-bottom: 1em;
+          margin-bottom: 0.5em;
           .icon {
             display: inline-block;
             font-size: 1em;
