@@ -1,5 +1,5 @@
 import { FaLinkedin, FaGithub, FaResearchgate, FaHome } from "react-icons/fa";
-import { MdEmail, MdPlace } from "react-icons/md";
+import { MdEmail, MdPlace, MdSchool } from "react-icons/md";
 
 import React from "react";
 
@@ -16,6 +16,12 @@ var itemsContact = [
     text1: "Brno, Czech Republic",
     link1: false,
     icon: <MdPlace />,
+  },
+  {
+    label: "Education",
+    text1: "PhD in Cartography, geoinformatics and remote sensing (2015-2020)",
+    link1: "http://geogr.muni.cz/homepage",
+    icon: <MdSchool />,
   },
   {
     label: "Mail",
