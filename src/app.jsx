@@ -113,23 +113,29 @@ const renderItemProject = (section, item, ii) => {
             })}
           </div>
         </Card.Content>
-        <Card.Footer>
-          <Button.Group position="right">
-            {item.links.map((link, li) => {
-              const linkType = links.find((l) => l.id === link.type);
-              return linkType ? (
-                <Button key={li} color="primary" size="small">
-                  <a href={link.value}>
-                    <span className="icon">{linkType.icon}</span>
-                    <span className="label">{link.text || linkType.label}</span>
-                  </a>
-                </Button>
-              ) : (
-                <span />
-              );
-            })}
-          </Button.Group>
-        </Card.Footer>
+        {item.links.length ? (
+          <Card.Footer>
+            <Button.Group position="right">
+              {item.links.map((link, li) => {
+                const linkType = links.find((l) => l.id === link.type);
+                return linkType ? (
+                  <Button key={li} color="primary" size="small">
+                    <a href={link.value}>
+                      <span className="icon">{linkType.icon}</span>
+                      <span className="label">
+                        {link.text || linkType.label}
+                      </span>
+                    </a>
+                  </Button>
+                ) : (
+                  <span />
+                );
+              })}
+            </Button.Group>
+          </Card.Footer>
+        ) : (
+          <span />
+        )}
       </Card>
     </div>
   );
@@ -318,9 +324,8 @@ const App = (props) => {
                         return (
                           <Columns.Column
                             key={ii}
-                            mobile={{ size: 12 }}
-                            tablet={{ size: 6 }}
-                            touch={{ size: 6 }}
+                            mobile={{ size: 11 }}
+                            tablet={{ size: 5 }}
                             desktop={{ size: 4 }}
                             widescreen={{
                               size: 4,
