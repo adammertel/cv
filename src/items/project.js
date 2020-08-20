@@ -9,9 +9,9 @@ export var links = [
 ];
 
 export var statuses = [
-  { id: 1, label: "in-progress", color: "#bdbdbd" },
-  { id: 2, label: "done", color: "white" },
-  { id: 3, label: "experimental", color: "#737373" },
+  { id: 1, label: "in-progress", color: "#f7fcb9" },
+  { id: 2, label: "done", color: "#41ab5d" },
+  { id: 3, label: "experimental", color: "#004529" },
 ];
 
 export var outputs = [
@@ -468,22 +468,6 @@ export var itemsProject = [
       {
         type: 2,
         value: "https://github.com/adammertel/argo-explorer",
-      },
-    ],
-  },
-  {
-    time: "2019",
-    label: "Photo Reward",
-    text:
-      "A free-time project. The idea behind is based on the theory that a small reward (in this case, a pretty picture that appears for a few seconds once a time period) may keep you motivated with the long-term task.",
-    image: "",
-    status: [3],
-    output: [2],
-    tags: [1, 16],
-    links: [
-      {
-        type: 2,
-        value: "https://github.com/adammertel/photo-reward",
       },
     ],
   },

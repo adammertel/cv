@@ -106,17 +106,16 @@
     }
 
     .section {
-      padding-top: 1.5em;
-      padding-bottom: 0em;
+      padding: em 1em 0em 1em;
 
       .section-content {
         .item-project {
           .card {
             min-height: 30em;
-            border: 2px solid $grey-dark;
+            border: 1px solid $grey;
           }
           .card-image {
-            border-bottom: 2px solid $grey-dark;
+            //border-bottom: 2px solid $grey-dark;
             .image {
               img {
                 display: flex;
@@ -138,10 +137,11 @@
 
             .tag {
               margin: 0.1rem;
-              border: 2px solid $grey-dark;
+              border: 0px solid $grey-dark;
               border-radius: 6px;
               font-size: 0.8em;
               font-weight: bold;
+              color: white;
               box-shadow: 0px 0px 0px 2px $white;
             }
 
@@ -153,7 +153,7 @@
             }
             .outputs {
               position: absolute;
-              top: 2.5em;
+              top: 0.5em;
               right: 0.5em;
               text-align: end;
             }
@@ -165,24 +165,24 @@
 
             .text-time {
               color: $primary;
+              font-weight: 500;
             }
           }
           .card-footer {
-            padding: 0.5em;
+            padding: 0.5rem 1rem;
             height: 3em;
             position: absolute;
             bottom: 0;
             width: 100%;
-            background-color: $grey-dark;
             .buttons {
               width: 100%;
-              text-align: end;
               clear: both;
               display: inline-block;
               overflow: hidden;
               white-space: nowrap;
 
               .button {
+                margin-right: 0.25rem;
                 a {
                   span {
                     display: inline-block;

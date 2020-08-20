@@ -64,21 +64,23 @@ const renderItemProject = (section, item, ii) => {
           src={images[item.image]}
         />
         <Card.Content>
-          <div className="statuses">
-            {item.status.map((statusId) => {
-              const status = statuses.find((s) => s.id === statusId);
-              return (
-                <Tag
-                  color="light"
-                  className="status"
-                  key={status.id}
-                  style={{ backgroundColor: status.color }}
-                >
-                  {status.label}
-                </Tag>
-              );
-            })}
-          </div>
+          {/*
+            <div className="statuses">
+              {item.status.map((statusId) => {
+                const status = statuses.find((s) => s.id === statusId);
+                return (
+                  <Tag
+                    color="light"
+                    className="status"
+                    key={status.id}
+                    style={{ backgroundColor: status.color }}
+                  >
+                    {status.label}
+                  </Tag>
+                );
+              })}
+              </div>
+              */}
           <div className="outputs">
             {item.output.map((outputId) => {
               const output = outputs.find((o) => o.id === outputId);
