@@ -57,7 +57,7 @@ export var itemsProject = [
     time: "2020",
     label: "Population density 3D, Slovakia",
     text:
-      "An interactive 3D map that visualizes the population density in Slovakia. Created with react-three-fiber, data are taken from wikipedia and worldpop dataset",
+      "An interactive 3D map that visualizes the population density in Slovakia. Created with react-three-fiber, data are taken from wikipedia and worldpop dataset.",
     image: "3d-slovakia",
     status: [],
     output: [2, 3],
@@ -70,6 +70,26 @@ export var itemsProject = [
       {
         type: 2,
         value: "https://github.com/adammertel/3d-map-slovakia-population",
+      },
+    ],
+  },
+  {
+    time: "2020",
+    label: "Premonstratensian monasteries in France",
+    text:
+      "This interactive map visualizes a dataset of Premonstratensian houses in France from the foundation of the order up to the present.",
+    image: "premonstratensians",
+    status: [],
+    output: [3],
+    tags: [1, 2, 11, 19],
+    links: [
+      {
+        type: 1,
+        value: "https://github.com/adammertel/premonstratensians-france",
+      },
+      {
+        type: 2,
+        value: "https://dissinet.cz/maps/premonstratensiansfrance/",
       },
     ],
   },
