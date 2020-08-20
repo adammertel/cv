@@ -15,16 +15,18 @@
     background-size: contain;
     background-color: $primary;
     background-position-y: bottom;
-  }
-  .content-section#Contact {
+
+    .column {
+      padding: 2em;
+    }
     .avatar {
       img {
-        margin-top: -2em;
         max-height: 300px;
         max-width: 300px;
       }
     }
-
+  }
+  .content-section#Contact {
     .text-label {
       font-weight: bolder;
       display: inline-block;

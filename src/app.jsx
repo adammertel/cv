@@ -162,27 +162,10 @@ const renderItemDefault = (section, item, ii) => {
 
 const sections = [
   {
-    title: "Contact",
+    title: "Info",
     icon: <MdPermContactCalendar />,
     items: itemsContact,
     renderItem: renderItemDefault,
-  },
-  {
-    title: "Education",
-    icon: <MdSchool />,
-    renderItem: renderItemDefault,
-    items: [
-      {
-        time: "Sep 2015 – May 2020",
-        label: "PhD in Cartography, geoinformatics and remote sensing",
-        text1: "MUNI, Brno, Czech Republic",
-      },
-      {
-        time: "Sep 2013 – Juny 2015",
-        label: "Mgr in Cartography, geoinformatics and remote sensing",
-        text1: "MUNI, Brno, Czech Republic",
-      },
-    ],
   },
   {
     title: "Topics",
@@ -226,6 +209,12 @@ const sections = [
     renderItem: renderItemDefault,
   },
   {
+    title: "Projects",
+    items: itemsProject.sort((a, b) => (a.time > b.time ? -1 : 1)),
+    icon: <FaPuzzlePiece />,
+    renderItem: renderItemProject,
+  },
+  {
     title: "Work",
     icon: <MdWork />,
     items: itemsWork,
@@ -242,12 +231,6 @@ const sections = [
     icon: <FaHammer />,
     items: itemsSkill,
     renderItem: renderItemSkill,
-  },
-  {
-    title: "Projects",
-    items: itemsProject.sort((a, b) => (a.time > b.time ? -1 : 1)),
-    icon: <FaPuzzlePiece />,
-    renderItem: renderItemProject,
   },
 ];
 
@@ -280,12 +263,21 @@ const App = (props) => {
   return (
     <div>
       <Hero color="primary" size="medium">
-        <Hero.Body>
+        <Hero.Body style={{ padding: 0 }}>
           <Container>
-            <Heading>Adam Mertel</Heading>
-            <Heading subtitle size={3}>
-              Maps, programming and data analysis
-            </Heading>
+            <Columns>
+              <Columns.Column size={3}>
+                <div className="avatar">
+                  <Image src="https://avatars2.githubusercontent.com/u/12932677?s=400&u=f9149742d8141baf4e7fafc141d9d642ffac9904&v=4" />
+                </div>
+              </Columns.Column>
+              <Columns.Column size={9} style={{ margin: "auto" }}>
+                <Heading size={1}>Adam Mertel</Heading>
+                <Heading subtitle size={3}>
+                  Maps, programming and spatial data analysis
+                </Heading>
+              </Columns.Column>
+            </Columns>
           </Container>
         </Hero.Body>
       </Hero>
@@ -317,23 +309,6 @@ const App = (props) => {
             >
               <Heading>{section.title}</Heading>
               <div className="section-content">
-                {section.title === "Contact" ? (
-                  <Columns>
-                    <Columns.Column size={6}>
-                      {section.items.map((item, ii) =>
-                        section.renderItem(section, item, ii)
-                      )}
-                    </Columns.Column>
-                    <Columns.Column size={6}>
-                      <div className="avatar">
-                        <Image
-                          rounded={true}
-                          src="https://avatars2.githubusercontent.com/u/12932677?s=400&u=f9149742d8141baf4e7fafc141d9d642ffac9904&v=4"
-                        />
-                      </div>
-                    </Columns.Column>
-                  </Columns>
-                ) : null}
                 {section.title === "Projects" ? (
                   <div className="projects-wrapper">
                     <Columns>
@@ -358,12 +333,11 @@ const App = (props) => {
                       })}
                     </Columns>
                   </div>
-                ) : null}
-                {section.title !== "Projects" && section.title !== "Contact"
-                  ? section.items.map((item, ii) =>
-                      section.renderItem(section, item, ii)
-                    )
-                  : null}
+                ) : (
+                  section.items.map((item, ii) =>
+                    section.renderItem(section, item, ii)
+                  )
+                )}
               </div>
             </Section>
           );
