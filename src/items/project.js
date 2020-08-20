@@ -54,6 +54,26 @@ tags.forEach((tag) => (tag["color"] = tagColor));
 
 export var itemsProject = [
   {
+    time: "2020",
+    label: "Population density 3D, Slovakia",
+    text:
+      "An interactive 3D map that visualizes the population density in Slovakia. Created with react-three-fiber, data are taken from wikipedia and worldpop dataset",
+    image: "3d-slovakia",
+    status: [],
+    output: [2, 3],
+    tags: [1, 9, 10, 24, 25],
+    links: [
+      {
+        type: 1,
+        value: "https://adammertel.github.io/3d-map-slovakia-population/",
+      },
+      {
+        type: 2,
+        value: "https://github.com/adammertel/3d-map-slovakia-population",
+      },
+    ],
+  },
+  {
     time: "2018",
     label: "Baptisteries",
     text:
