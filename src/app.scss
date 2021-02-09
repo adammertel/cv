@@ -8,247 +8,247 @@
 @import "~bulma/sass/layout/_all.sass";
 
 #app {
-  .hero {
-    background-image: url("./pictures/hero.png");
-    background-position-x: right;
-    background-repeat: repeat-y;
-    background-size: contain;
-    background-color: $primary;
-    background-position-y: bottom;
-
-    .column {
-      padding: 2em;
-    }
-    .avatar {
-      img {
-        max-height: 300px;
-        max-width: 300px;
-      }
-    }
-  }
-  .content-section#Contact {
-    .text-label {
-      font-weight: bolder;
-      display: inline-block;
-    }
-    .text {
-      margin-left: 0.5em;
-      display: inline-block;
-    }
-  }
-  .tabs {
-    position: sticky;
-    margin-bottom: 0;
-    top: 0;
-    z-index: 100;
-    .tab:first-of-type a {
-      border-left: 0px;
-    }
-    .tab:last-of-type a {
-      border-right: 0px;
-    }
-    @media only screen and (min-width: 1000px) {
-      .tab {
-        a {
-          padding: 0.5em 1em;
-          .tab-part {
-            font-size: 1em;
-          }
-        }
-      }
-    }
-    @media only screen and (max-width: 1000px) {
-      .tab {
-        a {
-          padding: 0.4em 0.8em;
-          .tab-part {
-            font-size: 0.8em;
-          }
-        }
-      }
-    }
-    @media only screen and (max-width: 700px) {
-      .tab {
-        a {
-          padding: 0.3em 1em;
-          .tab-title {
-            display: none;
-          }
-        }
-      }
-    }
-    .tab {
-      a {
-        border-width: 0px 2px 0px 2px;
-        border-color: $white;
-        font-weight: bolder;
-        border-radius: 0;
-        color: white;
-        background-color: $grey;
-
-        .tab-part {
-          display: inline;
-          &.tab-icon {
-            margin-right: 0.5em;
-            margin-top: 0.1em;
-          }
-        }
-      }
-      &.is-active a {
+    .hero {
+        background-image: url("./pictures/hero.png");
+        background-position-x: right;
+        background-repeat: repeat-y;
+        background-size: contain;
         background-color: $primary;
-      }
-    }
-  }
+        background-position-y: bottom;
 
-  .app-content {
-    margin-bottom: 3em;
-    .title {
-    }
-
-    .section {
-      padding: 2em 0em 0em 1em;
-
-      .section-content {
-        .item-project {
-          .card {
-            min-height: 30em;
-            border: 1px solid $grey;
-          }
-          .card-image {
-            //border-bottom: 2px solid $grey-dark;
-            .image {
-              img {
-                display: flex;
-                height: 15em;
-                width: 100%;
-                margin-left: auto;
-                object-fit: cover;
-                margin-right: auto;
-              }
-            }
-          }
-          .card-content {
-            padding: 1rem;
-            font-size: 0.8em;
-            padding-bottom: 5em;
-            .text {
-              margin-bottom: 0.5em;
-            }
-
-            .tag {
-              margin: 0.1rem;
-              border: 0px solid $grey-dark;
-              border-radius: 6px;
-              font-size: 0.8em;
-              font-weight: bold;
-              color: white;
-              box-shadow: 0px 0px 0px 2px $white;
-            }
-
-            .statuses {
-              position: absolute;
-              top: 0.5em;
-              right: 0.5em;
-              text-align: end;
-            }
-            .outputs {
-              position: absolute;
-              top: 0.5em;
-              right: 0.5em;
-              text-align: end;
-            }
-
-            .text-label {
-              font-size: 1.2em;
-              font-weight: bold;
-            }
-
-            .text-time {
-              color: $primary;
-              font-weight: 500;
-            }
-          }
-          .card-footer {
-            padding: 0.5rem 1rem;
-            height: 3em;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            .buttons {
-              width: 100%;
-              clear: both;
-              display: inline-block;
-              overflow: hidden;
-              white-space: nowrap;
-
-              .button {
-                margin-right: 0.25rem;
-                a {
-                  span {
-                    display: inline-block;
-                    color: white;
-                    font-size: 0.9em;
-                    vertical-align: middle;
-                    &.icon {
-                      margin-top: 0.2rem;
-                    }
-                  }
-                }
-              }
-            }
-          }
+        .column {
+            padding: 2em;
         }
-        .item {
-          margin-left: 2em;
-          margin-bottom: 0.5em;
-          .icon {
-            display: inline-block;
-            font-size: 1em;
-            margin-left: -1.5em;
-            vertical-align: middle;
-          }
-          .text-time {
-            color: $primary;
-          }
-          .text-label {
+        .avatar {
+            img {
+                max-height: 300px;
+                max-width: 300px;
+            }
+        }
+    }
+    .content-section#Contact {
+        .text-label {
             font-weight: bolder;
             display: inline-block;
-          }
-          .examples {
-            display: block;
-            .example {
-              display: inline;
-            }
-          }
-          .link {
-            color: $primary;
-            &.link1 {
-            }
-            &.link2 {
-            }
-          }
-          .text {
-            &.text1 {
-            }
-            &.text2 {
-            }
-          }
         }
-      }
+        .text {
+            margin-left: 0.5em;
+            display: inline-block;
+        }
     }
-  }
-
-  .hero {
-    .hero-foot {
-      .tabs {
-        ul {
-          li {
+    .tabs {
+        position: sticky;
+        margin-bottom: 0;
+        top: 0;
+        z-index: 100;
+        .tab:first-of-type a {
+            border-left: 0px;
+        }
+        .tab:last-of-type a {
+            border-right: 0px;
+        }
+        @media only screen and (min-width: 1000px) {
+            .tab {
+                a {
+                    padding: 0.5em 1em;
+                    .tab-part {
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width: 1000px) {
+            .tab {
+                a {
+                    padding: 0.4em 0.8em;
+                    .tab-part {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width: 700px) {
+            .tab {
+                a {
+                    padding: 0.3em 1em;
+                    .tab-title {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .tab {
             a {
-              border-radius: 0;
+                border-width: 0px 2px 0px 2px;
+                border-color: $white;
+                font-weight: bolder;
+                border-radius: 0;
+                color: white;
+                background-color: $grey;
+
+                .tab-part {
+                    display: inline;
+                    &.tab-icon {
+                        margin-right: 0.5em;
+                        margin-top: 0.1em;
+                    }
+                }
             }
-          }
+            &.is-active a {
+                background-color: $primary;
+            }
         }
-      }
     }
-  }
+
+    .app-content {
+        margin-bottom: 3em;
+        .title {
+        }
+
+        .section {
+            padding: 2em 0em 0em 1em;
+
+            .section-content {
+                .item-project {
+                    .card {
+                        min-height: 30em;
+                        border: 1px solid $grey;
+                    }
+                    .card-image {
+                        //border-bottom: 2px solid $grey-dark;
+                        .image {
+                            img {
+                                display: flex;
+                                height: 15em;
+                                width: 100%;
+                                margin-left: auto;
+                                object-fit: cover;
+                                margin-right: auto;
+                            }
+                        }
+                    }
+                    .card-content {
+                        padding: 1rem;
+                        font-size: 0.8em;
+                        padding-bottom: 5em;
+                        .text {
+                            margin-bottom: 0.5em;
+                        }
+
+                        .tag {
+                            margin: 0.1rem;
+                            border: 0px solid $grey-dark;
+                            border-radius: 6px;
+                            font-size: 0.8em;
+                            font-weight: bold;
+                            color: white;
+                            box-shadow: 0px 0px 0px 2px $white;
+                        }
+
+                        .statuses {
+                            position: absolute;
+                            top: 0.5em;
+                            right: 0.5em;
+                            text-align: end;
+                        }
+                        .outputs {
+                            position: absolute;
+                            top: 0.5em;
+                            right: 0.5em;
+                            text-align: end;
+                        }
+
+                        .text-label {
+                            font-size: 1.2em;
+                            font-weight: bold;
+                        }
+
+                        .text-time {
+                            color: $primary;
+                            font-weight: 500;
+                        }
+                    }
+                    .card-footer {
+                        padding: 0.5rem 1rem;
+                        height: 3em;
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        .buttons {
+                            width: 100%;
+                            clear: both;
+                            display: inline-block;
+                            overflow: hidden;
+                            white-space: nowrap;
+
+                            .button {
+                                margin-right: 0.25rem;
+                                a {
+                                    span {
+                                        display: inline-block;
+                                        color: white;
+                                        font-size: 0.9em;
+                                        vertical-align: middle;
+                                        &.icon {
+                                            margin-top: 0.2rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .item {
+                    margin-left: 2em;
+                    margin-bottom: 1em;
+                    .icon {
+                        display: inline-block;
+                        font-size: 1em;
+                        margin-left: -1.5em;
+                        vertical-align: middle;
+                    }
+                    .text-time {
+                        color: $primary;
+                    }
+                    .text-label {
+                        font-weight: bolder;
+                        display: inline-block;
+                    }
+                    .examples {
+                        display: block;
+                        .example {
+                            display: inline;
+                        }
+                    }
+                    .link {
+                        color: $primary;
+                        &.link1 {
+                        }
+                        &.link2 {
+                        }
+                    }
+                    .text {
+                        &.text1 {
+                        }
+                        &.text2 {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+        .hero-foot {
+            .tabs {
+                ul {
+                    li {
+                        a {
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
