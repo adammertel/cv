@@ -104,11 +104,7 @@ const renderItemProject = (section, item, ii) => {
                         {item.tags.map((tagId) => {
                             const tag = tags.find((t) => t.id === tagId);
                             return (
-                                <Tag
-                                    className=""
-                                    key={tag.id}
-                                    style={{ backgroundColor: tag.color }}
-                                >
+                                <Tag className="" key={tag.id}>
                                     {tag.label}
                                 </Tag>
                             );
@@ -127,6 +123,7 @@ const renderItemProject = (section, item, ii) => {
                                         key={li}
                                         color="primary"
                                         size="small"
+                                        inverted
                                     >
                                         <a href={link.value}>
                                             <span className="icon">

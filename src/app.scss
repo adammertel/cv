@@ -112,7 +112,7 @@
                 .item-project {
                     .card {
                         min-height: 30em;
-                        border: 1px solid $grey;
+                        //border: 1px solid $grey;
                     }
                     .card-image {
                         //border-bottom: 2px solid $grey-dark;
@@ -136,12 +136,14 @@
                         }
 
                         .tag {
+                            background-color: dimgrey;
+                            color: lightgray;
                             margin: 0.1rem;
-                            border: 0px solid $grey-dark;
+
                             border-radius: 6px;
                             font-size: 0.8em;
-                            font-weight: bold;
-                            color: white;
+                            font-weight: 500;
+
                             box-shadow: 0px 0px 0px 2px $white;
                         }
 
@@ -152,6 +154,7 @@
                             text-align: end;
                         }
                         .outputs {
+                            display: none;
                             position: absolute;
                             top: 0.5em;
                             right: 0.5em;
@@ -185,8 +188,8 @@
                                 margin-right: 0.25rem;
                                 a {
                                     span {
+                                        color: $primary;
                                         display: inline-block;
-                                        color: white;
                                         font-size: 0.9em;
                                         vertical-align: middle;
                                         &.icon {
