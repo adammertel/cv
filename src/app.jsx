@@ -22,7 +22,6 @@ import itemsContact from "./items/contact";
 import itemsSkill from "./items/skill";
 import itemsWork from "./items/work";
 
-import images from "./pictures/*.png";
 
 import { itemsProject, tags, outputs, statuses, links } from "./items/project";
 
@@ -55,13 +54,14 @@ const renderItemSkill = (section, item, ii) => {
 };
 
 const renderItemProject = (section, item, ii) => {
+    const itemPicturePath = `pictures/${item.image}.png`
     return (
         <div className="item-project" key={ii}>
             <Card>
                 <Card.Image
                     clipped
                     alt={"title image of the project of " + item.label}
-                    src={images[item.image]}
+                    src={itemPicturePath}
                 />
                 <Card.Content>
                     {/*
@@ -125,7 +125,7 @@ const renderItemProject = (section, item, ii) => {
                                         size="small"
                                         inverted
                                     >
-                                        <a href={link.value}>
+                                        <a href={link.value} target="empty">
                                             <span className="icon">
                                                 {linkType.icon}
                                             </span>
