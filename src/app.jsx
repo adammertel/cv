@@ -103,11 +103,12 @@ const renderItemProject = (section, item, ii) => {
                     <div className="tags">
                         {item.tags.map((tagId) => {
                             const tag = tags.find((t) => t.id === tagId);
-                            return (
+                            return tag ? 
+                             (
                                 <Tag className="" key={tag.id}>
                                     {tag.label}
                                 </Tag>
-                            );
+                            ) : null
                         })}
                     </div>
                 </Card.Content>
@@ -227,22 +228,22 @@ const sections = [
         renderItem: renderItemProject,
     },
     {
-        title: "Work",
+        title: "Professional Experience",
         icon: <MdWork />,
         items: itemsWork,
         renderItem: renderItemDefault,
+    },
+    {
+        title: "Expertise",
+        icon: <FaHammer />,
+        items: itemsSkill,
+        renderItem: renderItemSkill,
     },
     {
         title: "Studies",
         icon: <FaBook />,
         items: itemsStudy,
         renderItem: renderItemDefault,
-    },
-    {
-        title: "Skills",
-        icon: <FaHammer />,
-        items: itemsSkill,
-        renderItem: renderItemSkill,
     },
 ];
 
@@ -288,7 +289,7 @@ const App = (props) => {
                             <Columns.Column size={9} style={{ margin: "auto" }}>
                                 <Heading size={1}>Adam Mertel</Heading>
                                 <Heading subtitle size={3}>
-                                    Maps, programming and spatial data analysis
+                                    Geospatial Developer | Analyst | Dataviz Engineer 
                                 </Heading>
                             </Columns.Column>
                         </Columns>
