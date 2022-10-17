@@ -1,5 +1,54 @@
 var itemsStudy = [
   {
+    time: "2022",
+    label:
+      "A scalable pipeline for COVID-19: the case study of Germany, Czechia and Poland",
+    text1:
+      "Wildan Abdussalam, Adam Mertel, Kai Fan, Lennart Schüler, Weronika Schlechte-Wełnicz, Justin M Calabrese",
+    text2: "arXiv preprint arXiv:2208.12928",
+  },
+  {
+    time: "2022",
+    label:
+      "Metrics for the identification of primary centers of government from historical itineraries: Přemysl Otakar II: A case study",
+    text1: "A Mertel, D Kalhous, Z Stachoň",
+    text2: "SocArXiv",
+  },
+  {
+    time: "2022",
+    label:
+      "Optimal Workplace Occupancy Strategies during the COVID-19 Pandemic",
+    text1: "M Davoodi, A Senapati, A Mertel, W Schlechte-Welnicz, JM Calabrese",
+    text2: "arXiv preprint arXiv:2204.01444",
+  },
+  {
+    time: "2022",
+    label:
+      "Species invasiveness and community invasibility of US freshwater fish fauna revealed via trait-based analysis",
+    text1: "G Su, A Mertel, S Brosse, JM Calabrese",
+    text2: "bioRxiv",
+  },
+  {
+    time: "2022",
+    label:
+      "Fine-scale variation in the effect of national border on COVID-19 spread: A case study of the Saxon-Czech border region",
+    text1: "A Mertel, J Vyskočil, L Schüler, W Schlechte-Wełnicz, JM Calabrese",
+    text2: "medRxiv",
+  },
+  {
+    time: "2021",
+    label: "Historical geocoding assistant",
+    text1: "A Mertel, D Zbíral, Z Stachoň, H Hořínková",
+    text2: "SoftwareX 14, 100682",
+  },
+  {
+    time: "2021",
+    label:
+      "The network (s) of Mithraism: discussing the role of the Roman army in the spread of Mithraism and the question of interregional communication",
+    text1: "A Chalupa, E Výtvarová, A Mertel, J Fousek, T Hampejs",
+    text2: "Religio. 2021, vol. 29, iss. 2, pp. [107]-131",
+  },
+  {
     time: "2020",
     label: "Digitising Patterns of Power",
     text1: "M Breier, A Mertel, K Kriz, A Pucher",
