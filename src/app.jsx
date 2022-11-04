@@ -103,12 +103,12 @@ const renderItemProject = (section, item, ii) => {
                     <div className="tags">
                         {item.tags.map((tagId) => {
                             const tag = tags.find((t) => t.id === tagId);
-                            return tag ? 
-                             (
-                                <Tag className="" key={tag.id}>
-                                    {tag.label}
-                                </Tag>
-                            ) : null
+                            return tag ?
+                                (
+                                    <Tag className="" key={tag.id}>
+                                        {tag.label}
+                                    </Tag>
+                                ) : null
                         })}
                     </div>
                 </Card.Content>
@@ -188,11 +188,6 @@ const sections = [
         icon: <RiFocus2Line />,
         items: [
             {
-                label: "Analytical GIS and complex spatial systems",
-                text1:
-                    "Processing, integrating and storing geospatial data, creating models and preparing analyses",
-            },
-            {
                 label: "Interactive (geo)visualization",
                 text1:
                     "Designing interactive visualization methods for spatial/temporal/relational datasets",
@@ -206,6 +201,11 @@ const sections = [
                 label: "Geospatial technologies",
                 text1:
                     "Technologies to help store, analyze or visualize geospatial data.",
+            },
+            {
+                label: "Analytical GIS and complex spatial systems",
+                text1:
+                    "Processing, integrating and storing geospatial data, creating models and preparing analyses",
             },
             {
                 label:
@@ -289,7 +289,7 @@ const App = (props) => {
                             <Columns.Column size={9} style={{ margin: "auto" }}>
                                 <Heading size={1}>Adam Mertel</Heading>
                                 <Heading subtitle size={3}>
-                                    Geospatial Developer | Analyst | Dataviz Engineer 
+                                    Geospatial Developer | GIS Analyst | Dataviz Engineer
                                 </Heading>
                             </Columns.Column>
                         </Columns>
