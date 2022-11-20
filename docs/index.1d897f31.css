@@ -12075,10 +12075,6 @@ a.tag:hover {
   padding: 2em 0 0 1em;
 }
 
-#app .app-content .section .section-content .item-project .card {
-  min-height: 30em;
-}
-
 #app .app-content .section .section-content .item-project .card-image .image img {
   height: 15em;
   width: 100%;
@@ -12091,6 +12087,7 @@ a.tag:hover {
 #app .app-content .section .section-content .item-project .card-content {
   padding: 1rem 1rem 5em;
   font-size: .8em;
+  display: none;
 }
 
 #app .app-content .section .section-content .item-project .card-content .text {
@@ -12163,6 +12160,33 @@ a.tag:hover {
   margin-top: .2rem;
 }
 
+#app .app-content .section .section-content .item-project:hover .card {
+  background-color: #2876cd;
+  border: 2px solid #2876cd;
+  animation: 1s item-hover;
+  color: #fff !important;
+}
+
+#app .app-content .section .section-content .item-project:hover .card-content {
+  display: block;
+  position: relative;
+}
+
+#app .app-content .section .section-content .item-project:hover .tag {
+  color: #2876cd;
+  background-color: #fff;
+  border-radius: 6px;
+  margin: .1rem;
+  font-size: .8em;
+  font-weight: 500;
+  box-shadow: 0 0 #fff;
+}
+
+#app .app-content .section .section-content .item-project:hover .text-time {
+  color: #fff;
+  font-weight: 500;
+}
+
 #app .app-content .section .section-content .item {
   margin-bottom: 1em;
   margin-left: 2em;
@@ -12198,6 +12222,23 @@ a.tag:hover {
 
 #app .hero .hero-foot .tabs ul li a {
   border-radius: 0;
+}
+
+@keyframes item-hover {
+  0% {
+    background-color: #fff;
+    border: 2px solid #fff;
+  }
+
+  25% {
+    background-color: #7a7a7a;
+    border: 2px solid #7a7a7a;
+  }
+
+  100% {
+    background-color: #2876cd;
+    border: 2px solid #2876cd;
+  }
 }
 
 /*# sourceMappingURL=index.1d897f31.css.map */
