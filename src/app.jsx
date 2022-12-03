@@ -240,7 +240,7 @@ const sections = [
         renderItem: renderItemSkill,
     },
     {
-        title: "Studies",
+        title: "Publications",
         icon: <FaBook />,
         items: itemsStudy,
         renderItem: renderItemDefault,
