@@ -202,6 +202,7 @@
                         position: absolute;
                         bottom: 0;
                         width: 100%;
+                        border-top: 0px;
 
                         .buttons {
                             width: 100%;
@@ -239,7 +240,7 @@
 
                         background-color: $primary;
                         border: 2px solid $primary;
-                        color: $white  !important
+                        color: $white !important
                     }
 
                     .card-content {

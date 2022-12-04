@@ -12132,6 +12132,7 @@ a.tag:hover {
 #app .app-content .section .section-content .item-project .card-footer {
   height: 3em;
   width: 100%;
+  border-top: 0;
   padding: .5rem 1rem;
   position: absolute;
   bottom: 0;

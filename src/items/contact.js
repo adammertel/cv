@@ -27,7 +27,7 @@ var itemsContact = [
   {
     label: "Education",
     text1: "PhD in Cartography, geoinformatics and remote sensing",
-    text2: "Masaryk FaUniversity, Brno, Czechia",
+    text2: "Masaryk University, Brno, Czechia",
     link2: "http://geogr.muni.cz/homepage",
     icon: <MdSchool />,
   },
