@@ -131,6 +131,7 @@
                     .card {
                         //min-height: 20em;
                         //border: 1px solid $grey;
+                        border: 2px solid transparent;
                     }
 
                     .card-image {
@@ -149,13 +150,14 @@
                     }
 
                     .card-content {
-                        display: none;
+                        //display: none;
                         padding: 1rem;
                         font-size: 0.8em;
                         padding-bottom: 5em;
 
                         .text {
                             margin-bottom: 0.5em;
+                            color: grey
                         }
 
                         .tag {
@@ -242,10 +244,15 @@
                         border: 2px solid $primary;
                         color: $white !important
                     }
-
+                    
                     .card-content {
                         display: block;
-                        position: relative
+                        position: relative;
+                        color: $white !important;
+                        .text {
+                            margin-bottom: 0.5em;
+                            color: $white !important
+                        }
                     }
 
                     .tag {

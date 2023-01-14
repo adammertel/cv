@@ -62,6 +62,7 @@ const renderItemProject = (section, item, ii) => {
                     clipped
                     alt={"title image of the project of " + item.label}
                     src={itemPicturePath}
+                    fallback={itemPicturePath}
                 />
                 <Card.Content>
                     {/*
@@ -126,7 +127,7 @@ const renderItemProject = (section, item, ii) => {
                                         size="small"
                                         inverted
                                     >
-                                        <a href={link.value} target="empty">
+                                        <a href={link.value} target="_blank">
                                             <span className="icon">
                                                 {linkType.icon}
                                             </span>
