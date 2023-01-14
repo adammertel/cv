@@ -1,4 +1,12 @@
-import { FaBook, FaMapMarkedAlt, FaCode, FaFileAlt } from "react-icons/fa";
+import {
+  FaBook,
+  FaMapMarkedAlt,
+  FaCode,
+  FaFileAlt,
+  FaUsers,
+  FaYoutube,
+  FaChalkboardTeacher,
+} from "react-icons/fa";
 import React from "react";
 
 export var links = [
@@ -6,6 +14,9 @@ export var links = [
   { id: 2, label: "code", icon: <FaCode /> },
   { id: 3, label: "study", icon: <FaBook /> },
   { id: 4, label: "manual", icon: <FaFileAlt /> },
+  { id: 5, label: "project", icon: <FaUsers /> },
+  { id: 6, label: "video", icon: <FaYoutube /> },
+  { id: 7, label: "demo", icon: <FaChalkboardTeacher /> },
 ];
 
 export var statuses = [
@@ -66,7 +77,7 @@ export var itemsProject = [
     time: "2022",
     label: "River network construction",
     text: "Scraping, integrating, and processing geospatial data for ecological modeling of fish species dissemination",
-    image: "rivernetwork",
+    image: "rivernetwork2",
     status: [],
     output: [],
     tags: [4, 11, 18],
@@ -75,6 +86,11 @@ export var itemsProject = [
         type: 3,
         value:
           "https://www.biorxiv.org/content/biorxiv/early/2022/03/06/2022.03.04.481515.full.pdf",
+      },
+      {
+        type: 3,
+        value:
+          "https://www.biorxiv.org/content/biorxiv/early/2023/01/09/2023.01.09.523236.full.pdf",
       },
     ],
   },
@@ -130,7 +146,7 @@ export var itemsProject = [
   },
   {
     time: "2021—2022",
-    label: "Municipality regression model",
+    label: "Municipality COVID-19 regression model",
     text: "A geospatial analysis study using regression models to quantify spatial variation in the inhibitory effect of an international border on the COVID-19 spread",
     image: "border",
     status: [],
@@ -140,7 +156,7 @@ export var itemsProject = [
       {
         type: 3,
         value:
-          "https://www.medrxiv.org/content/medrxiv/early/2022/03/02/2022.03.01.22271644.full.pdf",
+          "https://www.sciencedirect.com/science/article/pii/S1877584522000831",
       },
     ],
   },
@@ -188,12 +204,16 @@ export var itemsProject = [
     tags: [1, 2, 11],
     links: [
       {
-        type: 1,
+        type: 2,
         value: "https://github.com/adammertel/premonstratensians-france",
       },
       {
-        type: 2,
+        type: 1,
         value: "https://dissinet.cz/maps/premonstratensiansfrance/",
+      },
+      {
+        type: 5,
+        value: "https://dissinet.cz",
       },
     ],
   },
@@ -254,6 +274,10 @@ export var itemsProject = [
         type: 2,
         value: "https://github.com/DISSINET/dissinet.lollards-map",
       },
+      {
+        type: 5,
+        value: "https://dissinet.cz",
+      },
     ],
   },
   {
@@ -273,6 +297,10 @@ export var itemsProject = [
         type: 2,
         value: "https://github.com/DISSINET/dissinet.cathar-houses-languedoc",
       },
+      {
+        type: 5,
+        value: "https://dissinet.cz",
+      },
     ],
   },
   {
@@ -287,6 +315,10 @@ export var itemsProject = [
       {
         type: 2,
         value: "https://github.com/DISSINET/visualizations",
+      },
+      {
+        type: 5,
+        value: "https://dissinet.cz",
       },
     ],
   },
@@ -436,7 +468,12 @@ export var itemsProject = [
     status: [2, 3],
     output: [1, 2, 3, 4],
     tags: [1, 9, 11, 12, 20],
-    links: [],
+    links: [
+      {
+        type: 6,
+        value: "https://www.youtube.com/watch?v=oisVDBFv978",
+      },
+    ],
   },
   {
     time: "2017",
@@ -447,7 +484,7 @@ export var itemsProject = [
     output: [1, 2],
     tags: [1, 9, 21],
     links: [
-      { type: 1, value: "dissinet.cz/apps/godsonthebarge" },
+      { type: 1, value: "https://dissinet.cz/apps/godsonthebarge/" },
       { type: 2, value: "https://github.com/adammertel/gods_on_the_barge" },
     ],
   },
@@ -459,7 +496,9 @@ export var itemsProject = [
     status: [1],
     output: [1, 3, 4],
     tags: [4, 18],
-    links: [],
+    links: [
+      { type: 1, value: "https://geoportal.uhul.cz/mapy/mapyBuHist.html" },
+    ],
   },
   {
     time: "2019",
@@ -484,6 +523,14 @@ export var itemsProject = [
       {
         type: 2,
         value: "https://github.com/DISSINET/InkVisitor",
+      },
+      {
+        type: 1,
+        value: "https://dissinet.cz/apps/inkvisitor/",
+      },
+      {
+        type: 5,
+        value: "https://dissinet.cz",
       },
     ],
   },
@@ -516,6 +563,11 @@ export var itemsProject = [
         type: 2,
         value: "https://github.com/adammertel/Leaflet.RegularGridCluster",
       },
+      {
+        type: 7,
+        value:
+          "https://adammertel.github.io/Leaflet.RegularGridCluster/demo/random_data/",
+      },
     ],
   },
   {
@@ -533,7 +585,7 @@ export var itemsProject = [
           "https://github.com/adammertel/Leaflet.MarkerCluster.PlacementStrategies",
       },
       {
-        type: 1,
+        type: 7,
         value:
           "https://adammertel.github.io/Leaflet.MarkerCluster.PlacementStrategies/demo/random-data.html",
       },
@@ -553,7 +605,7 @@ export var itemsProject = [
         value: "https://adammertel.github.io/Leaflet.Control.Select/",
       },
       {
-        type: 2,
+        type: 7,
         value: "https://github.com/adammertel/Leaflet.Control.Select",
       },
     ],
@@ -568,13 +620,13 @@ export var itemsProject = [
     tags: [1, 2],
     links: [
       {
-        type: 1,
-        value:
-          "https://adammertel.github.io/Leaflet.MarkerCluster.List/demo/demo1.html",
-      },
-      {
         type: 2,
         value: "https://github.com/adammertel/Leaflet.MarkerCluster.List",
+      },
+      {
+        type: 7,
+        value:
+          "https://adammertel.github.io/Leaflet.MarkerCluster.List/demo/demo1.html",
       },
     ],
   },
