@@ -9,7 +9,7 @@
   "staticFiles": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel ./src/index.html && rm -rf ./dist/pictures/**/**.* && cp -r ./src/pictures/** ./dist/pictures/",
+    "start": "parcel ./src/index.html && rm -rf ./dist/pictures/**/**.* mkdir ./dist/pictures && cp -r ./src/pictures/** ./dist/pictures",
     "build": "rm -rf ./docs && mkdir ./docs && parcel serve src/index.html --dist-dir docs --public-url ./ && mkdir ./docs/pictures && cp -r ./src/pictures/** ./docs/pictures/"
   },
   "repository": {
@@ -22,17 +22,16 @@
     "url": "https://github.com/adammertel/cv/issues"
   },
   "homepage": "https://github.com/adammertel/cv#readme",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.7.0",
-    "cssnano": "^5.1.13",
+  "dependencies": {
+    "@parcel/transformer-css": "^2.8.2",
+    "@parcel/transformer-sass": "^2.8.2",
+    "bulma": "^0.9.4",
     "parcel-plugin-static-files-copy": "^2.6.0",
     "process": "^0.11.10",
-    "sass": "^1.55.0"
-  },
-  "dependencies": {
     "react": "^16.13.1",
-    "react-bulma-components": "^3.4.0",
+    "react-bulma-components": "^4.1.0",
     "react-dom": "^16.13.1",
-    "react-icons": "^3.10.0"
+    "react-icons": "^3.10.0",
+    "sass": "^1.57.1"
   }
 }
