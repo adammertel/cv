@@ -8,18 +8,13 @@ Yarn version:
   1.22.19
 
 Node version: 
-  12.22.9
+  14.21.2
 
 Platform: 
   linux x64
 
 Trace: 
-  SyntaxError: /home/adam/projects/cv/package.json: Unexpected token } in JSON at position 1140
-      at JSON.parse (<anonymous>)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:1629:59
-      at Generator.next (<anonymous>)
-      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
-      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+  Error: EACCES: permission denied, unlink '/home/adam/projects/cv/node_modules/.bin/acorn'
 
 npm manifest: 
   {
@@ -33,8 +28,8 @@ npm manifest:
     "staticFiles": {},
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "parcel ./src/index.html && rm -rf ./dist/pictures/**/**.* && cp -r ./src/pictures/** ./dist/pictures/",
-      "build": "rm -rf ./docs && mkdir ./docs && parcel serve src/index.html --dist-dir docs --public-url ./ && mkdir ./docs/pictures && cp -r ./src/pictures/** ./docs/pictures/"
+      "start": "rm -rf dist && mkdir dist/ && mkdir dist/pictures && cp -r ./src/pictures/** dist/pictures && parcel ./src/index.html",
+      "build": "rm -rf ./docs && mkdir ./docs && mkdir ./docs/pictures && cp -r ./src/pictures/** ./docs/pictures/ && parcel serve src/index.html --dist-dir docs --public-url ./"
     },
     "repository": {
       "type": "git",
@@ -48,15 +43,13 @@ npm manifest:
     "homepage": "https://github.com/adammertel/cv#readme",
     "dependencies": {
       "bulma": "^0.9.4",
-      "react": "^16.13.1",
-      "react-bulma-components": "^3.4.0",
-      "react-dom": "^16.13.1",
-      "sass": "^1.57.1",
-      "react-icons": "^3.10.0",
-      "@parcel/transformer-sass": "^2.8.2",
-      "@parcel/transformer-css": "^2.8.2",
       "parcel-plugin-static-files-copy": "^2.6.0",
       "process": "^0.11.10",
+      "react": "^16.13.1",
+      "react-bulma-components": "^4.1.0",
+      "react-dom": "^16.13.1",
+      "react-icons": "^3.10.0",
+      "sass": "^1.57.1"
     }
   }
 
