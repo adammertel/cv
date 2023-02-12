@@ -1,9 +1,30 @@
 var itemsWork = [
   {
+    time: "Jan 2019 – ",
+    position: "Geospatial Developer | UI Developer",
+    company: "Freelancer",
+    location: "remote",
+    description: [
+      "Designed and developed various on-demand web-based applications, data dashboards, maps, and visualizations from conception to deployment.",
+    ],
+    skills: [
+      "React.js",
+      "TypeScript",
+      "PostgreSQL",
+      "NoSQL",
+      "D3.js",
+      "HTML5 Canvas",
+      "Node.js",
+      "Jest",
+      "Python",
+      "QGIS",
+    ],
+  },
+  {
     time: "Oct 2020 — Dec 2022",
-    label: "Postdoc researcher | UI developer",
-    text1: "Casus Science | HZDR",
-    link1: "https://www.casus.science/",
+    position: "Postdoc researcher | GIS Engineer | UI developer",
+    company: "Casus Science | HZDR",
+    link: "https://www.casus.science/",
     location: "Goerlitz | Dresden, DE",
     description: [
       "Led the development of the web infrastructure of www.where2test.de, including designing and implementing interactive visual components",
@@ -30,42 +51,22 @@ var itemsWork = [
   },
   {
     time: "Jan 2019 – Nov 2020",
-    label: "GIS Data Analyst",
-    text1: "Czech Academy of Science",
-    link1: "https://www.avcr.cz/en/",
+    position: "GIS Data Analyst",
+    company: "Czech Academy of Science",
+    link: "https://www.avcr.cz/en/",
     location: "Brno | Prague, CZ",
     description: [
       "Built processing pipelines for geospatial environmental data and prepared visualizations",
     ],
     skills: ["Geo/Pandas", "Python", "QGIS", "Data visualization"],
   },
-  {
-    time: "Jan 2019 – ",
-    label: "Geospatial Developer | UI Developer",
-    text1: "Freelancer",
-    location: "-",
-    description: [
-      "Designed and developed various on-demand web-based applications, data dashboards, maps, and visualizations from conception to deployment.",
-    ],
-    skills: [
-      "React.js",
-      "TypeScript",
-      "PostgreSQL",
-      "NoSQL",
-      "D3.js",
-      "HTML5 Canvas",
-      "Node.js",
-      "Jest",
-      "Python",
-      "QGIS",
-    ],
-  },
+
   {
     time: "Aug 2015 – Nov 2020",
-    label: "Researcher | GIS Engineer",
-    text1: "Masaryk University",
+    position: "Researcher | GIS Engineer",
+    company: "Masaryk University",
     location: "Brno, CZ",
-    link1: "https://www.muni.cz/en",
+    link: "https://www.muni.cz/en",
     description: [
       "Administrated projects involving geospatial data acquisition, scraping, modeling, storage, analysis, and interactive visualization",
       "Conducted interdisciplinary research in various scientific fields, including archaeology, history, and environmental studies",
@@ -88,10 +89,10 @@ var itemsWork = [
   },
   {
     time: "Apr 2017 – Mar 2019",
-    label: "Geospatial Developer",
-    text1:
+    position: "Geospatial Developer",
+    company:
       "University of Vienna, Department of Geography and Regional Research",
-    link1: "https://www.univie.ac.at/en/",
+    link: "https://www.univie.ac.at/en/",
     location: "Vienna, AT",
     description: [
       "Designed and built map-centered web applications using React and TS|JS",
@@ -110,12 +111,12 @@ var itemsWork = [
   },
   {
     time: "Sep 2014 – Nov 2015",
-    label: "React Developer",
-    text1: "CDV - Transport Research Centre",
-    link1: "https://www.cdv.cz/en/",
+    position: "React Developer",
+    company: "CDV - Transport Research Centre",
+    link: "https://www.cdv.cz/en/",
     location: "Brno , CZ",
     description: [
-      "Built company internal information system using React and Coffeescript",
+      "Helped developing company internal information system using React and Coffeescript",
     ],
     skills: ["Coffeescript", "React", "sequelize"],
   },

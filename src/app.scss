@@ -16,7 +16,7 @@
         background-position-x: right;
         background-repeat: repeat-y;
         background-size: contain;
-        background-color: $primary;
+        background-color: $COLOR_PRIMARY;
         background-position-y: bottom;
 
         .column {
@@ -96,11 +96,11 @@
         .tab {
             a {
                 border-width: 0px 2px 0px 2px;
-                border-color: $white;
+                border-color: $COLOR_WHITE;
                 font-weight: bolder;
                 border-radius: 0;
-                color: white;
-                background-color: $grey;
+                color: $COLOR_WHITE;
+                background-color: $COLOR_TEXT_LIGHT;
 
                 .tab-part {
                     display: inline;
@@ -113,7 +113,7 @@
             }
 
             &.is-active a {
-                background-color: $primary;
+                background-color: $COLOR_PRIMARY;
             }
         }
     }
@@ -160,18 +160,6 @@
                             color: grey
                         }
 
-                        .tag {
-                            background-color: dimgrey;
-                            color: lightgray;
-                            margin: 0.1rem;
-
-                            border-radius: 6px;
-                            font-size: 0.8em;
-                            font-weight: 500;
-
-                            box-shadow: 0px 0px 0px 2px $white;
-                        }
-
                         .statuses {
                             position: absolute;
                             top: 0.5em;
@@ -193,7 +181,7 @@
                         }
 
                         .text-time {
-                            color: $primary;
+                            color: $COLOR_PRIMARY;
                             font-weight: 500;
                         }
                     }
@@ -214,17 +202,18 @@
                             white-space: nowrap;
 
                             .button {
-                                margin-right: 0.25rem;
-
+                           
                                 a {
                                     span {
-                                        color: $primary;
+                                        color: $COLOR_PRIMARY;
                                         display: inline-block;
                                         font-size: 0.9em;
                                         vertical-align: middle;
 
                                         &.icon {
-                                            margin-top: 0.2rem;
+                                            margin-top: 5px;
+                                            padding-left: 0px;
+                                            margin-left: 0px;
                                         }
                                     }
                                 }
@@ -240,43 +229,87 @@
                     .card {
                         animation: item-hover 1s none;
 
-                        background-color: $primary;
-                        border: 2px solid $primary;
-                        color: $white !important
+                        background-color: $COLOR_PRIMARY;
+                        border: 2px solid $COLOR_PRIMARY;
+                        color: $COLOR_WHITE !important
                     }
                     
                     .card-content {
                         display: block;
                         position: relative;
-                        color: $white !important;
+                        color: $COLOR_WHITE !important;
                         .text {
                             margin-bottom: 0.5em;
-                            color: $white !important
+                            color: $COLOR_WHITE !important
                         }
                     }
 
-                    .tag {
-                        background-color: $white;
-                        color: $primary;
-                        margin: 0.1rem;
-
-                        border-radius: 6px;
-                        font-size: 0.8em;
-                        font-weight: 500;
-
-                        box-shadow: 0px 0px 0px 0px $white;
-                    }
-
                     .text-time {
-                        color: $white;
+                        color: $COLOR_WHITE;
                         font-weight: 500;
                     }
+                }
+                
+                .item.item-work {
+                    margin-bottom: 1.5em;
+
+                    .text-time-location {
+                        display: flex;
+
+                        .text-location {
+                            margin-left: 10px
+
+                        }
+
+                        .text-time, .text-location {
+                            color: $COLOR_TEXT_LIGHT;
+                            font-weight: 500;
+                            font-size: 13px;
+                            align-items: baseline;
+                            svg {
+                                margin-right: 3px
+                            }
+                        }
+                    }
+                    
+                    
+                    .text-position {
+                        .text-occupation {
+                            font-weight: 800;
+                        }
+                        
+                        .text-institute {
+                            color: $COLOR_PRIMARY;
+                            font-weight: 800;
+                        }
+                        
+                    }
+
+                    .text-description {
+                        margin-left: 20px;
+                        ul {
+                            list-style: disc;
+                        }
+                    }
+               
                 }
 
 
                 .item {
                     margin-left: 2em;
                     margin-bottom: 1em;
+
+                    .tag {
+                        color: $COLOR_WHITE;
+                        background-color: $COLOR_TEXT_LIGHT;
+                        margin: 2px;
+
+                        border-radius: 5px;
+                        font-size: 10px;
+                        font-weight: 600;
+                        padding: 5px;
+
+                    }
 
                     .icon {
                         display: inline-block;
@@ -286,7 +319,7 @@
                     }
 
                     .text-time {
-                        color: $primary;
+                        color: $COLOR_PRIMARY;
                     }
 
                     .text-label {
@@ -303,7 +336,7 @@
                     }
 
                     .link {
-                        color: $primary;
+                        color: $COLOR_PRIMARY;
 
                         &.link1 {}
 
@@ -337,8 +370,8 @@
 
 @keyframes item-hover {
     0% {
-        background-color: $white;
-        border: 2px solid $white;
+        background-color: $COLOR_WHITE;
+        border: 2px solid $COLOR_WHITE;
     }
 
     25% {
@@ -347,7 +380,7 @@
     }
 
     100% {
-        background-color: $primary;
-        border: 2px solid $primary;
+        background-color: $COLOR_PRIMARY;
+        border: 2px solid $COLOR_PRIMARY;
     }
 }

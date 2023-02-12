@@ -61,7 +61,7 @@ const renderItemSkill = (section, item, ii) => {
 const renderItemProject = (section, item, ii) => {
   const itemPicturePath = `pictures/${item.image}.png`;
   return (
-    <div className="item-project" key={ii}>
+    <div className="item item-project" key={ii}>
       <Card>
         <Card.Image
           clipped
@@ -91,11 +91,7 @@ const renderItemProject = (section, item, ii) => {
             {item.output.map((outputId) => {
               const output = outputs.find((o) => o.id === outputId);
               return (
-                <Tag
-                  className="output"
-                  key={output.id}
-                  style={{ backgroundColor: output.color }}
-                >
+                <Tag className="tag output" key={output.id}>
                   {output.label}
                 </Tag>
               );
@@ -108,7 +104,7 @@ const renderItemProject = (section, item, ii) => {
             {item.tags.map((tagId) => {
               const tag = tags.find((t) => t.id === tagId);
               return tag ? (
-                <Tag className="" key={tag.id}>
+                <Tag className="tag work-skill" key={tag.id}>
                   {tag.label}
                 </Tag>
               ) : null;
