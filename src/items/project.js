@@ -331,17 +331,18 @@ export var itemsProject = [
     output: [1, 2, 3, 4],
     tags: [1, 2, 11, 13],
     links: [
-      {
-        type: 1,
-        value: "http://gehir.phil.muni.cz/map/",
-      },
+      // {
+      //   type: 1,
+      //   value: "http://gehir.phil.muni.cz/map/",
+      // },
       {
         type: 2,
         value: "https://github.com/adammertel/gehir.mapapp",
       },
       {
         type: 3,
-        value: "",
+        value:
+          "https://www.researchgate.net/publication/341644522_The_role_of_spatial_visual_analysis_in_historical_religious_studies",
       },
     ],
   },
@@ -446,7 +447,7 @@ export var itemsProject = [
     links: [
       {
         type: 1,
-        value: "avalanche.report",
+        value: "https://www.avalanche.report",
       },
     ],
   },
