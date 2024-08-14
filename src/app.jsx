@@ -211,7 +211,28 @@ const renderItemWork = (section, item, ii) => {
   );
 };
 
-const renderItemDefault = (section, item, ii) => {
+const renderItemContact = (section, item, ii) => {
+  const icon = item.icon || section.icon;
+  return (
+    <div className={"item item-contact"} key={ii}>
+      <div className="text-label">{item.label}</div>
+
+      <div className="icon-text">
+        {icon && <div className="icon">{icon}</div>}
+
+        {item.link1 ? (
+          <a className="link link1" href={item.link1}>
+            <div className="text text1">{item.text1}</div>
+          </a>
+        ) : (
+          <div className="text text1">{item.text1}</div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+const renderItemTopics = (section, item, ii) => {
   const icon = item.icon || section.icon;
   return (
     <div className={"item" + " item-" + section.title} key={ii}>
@@ -243,26 +264,28 @@ const sections = [
     title: "Info",
     icon: <MdPermContactCalendar />,
     items: itemsContact,
-    renderItem: renderItemDefault,
+    renderItem: renderItemContact,
+  },
+  {
+    title: "Professional Experience",
+    items: itemsWork,
+    icon: <MdWork />,
+    renderItem: renderItemWork,
+  },
+  {
+    title: "Projects",
+    items: itemsProject.sort((a, b) => (a.time > b.time ? -1 : 1)),
+    icon: <FaPuzzlePiece />,
+    renderItem: renderItemProject,
   },
   {
     title: "Topics",
     icon: <RiFocus2Line />,
     items: [
       {
-        label: "Interactive (geo)visualization",
+        label: "Interactive (geo)visualization and web-cartography",
         text1:
-          "Designing interactive visualization methods for spatial/temporal/relational datasets",
-      },
-      {
-        label: "Web cartography",
-        text1:
-          "Development of web-based and map-centric applications and tools",
-      },
-      {
-        label: "Geospatial technologies",
-        text1:
-          "Technologies to help store, analyze or visualize geospatial data.",
+          "Development of web-based and map-centric applications and tools and designing interactive visualization methods for spatial/temporal/relational datasets",
       },
       {
         label: "Analytical GIS and complex spatial systems",
@@ -280,19 +303,7 @@ const sections = [
           "Handling spatial data in humanities research - archaeology, historical science, musicology...",
       },
     ],
-    renderItem: renderItemDefault,
-  },
-  {
-    title: "Professional Experience",
-    items: itemsWork,
-    icon: <MdWork />,
-    renderItem: renderItemWork,
-  },
-  {
-    title: "Projects",
-    items: itemsProject.sort((a, b) => (a.time > b.time ? -1 : 1)),
-    icon: <FaPuzzlePiece />,
-    renderItem: renderItemProject,
+    renderItem: renderItemTopics,
   },
   {
     title: "Expertise",
@@ -379,7 +390,9 @@ const App = (props) => {
               id={section.title}
               className="content-section"
               data-section={section.title}>
-              <Heading>{section.title}</Heading>
+              <Heading style={{ marginBottom: "10px" }}>
+                {section.title}
+              </Heading>
               <div className="section-content">
                 {section.title === "Projects" ? (
                   <div className="projects-wrapper">

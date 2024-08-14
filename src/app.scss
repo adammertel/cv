@@ -245,6 +245,27 @@
 
         margin-bottom: 1.5em;
 
+        .item-contact {
+          .text-label {
+            color: $COLOR_TEXT_LIGHT;
+            font-weight: 500;
+            font-size: 13px;
+            align-items: baseline;
+            svg {
+              margin-right: 3px;
+            }
+          }
+          .icon-text {
+            display: flex;
+            align-items: center;
+            column-gap: 2px;
+          }
+          .icon {
+            margin-right: 0px !important;
+          }
+          margin-bottom: 0.5em !important;
+        }
+
         .item {
           margin-left: 2em;
           margin-bottom: 1em;
@@ -264,7 +285,6 @@
             display: inline-block;
             font-size: 1em;
             margin-left: -1.5em;
-            vertical-align: middle;
           }
 
           .text-time {

@@ -14912,6 +14912,31 @@ fieldset[disabled] .select select:-ms-input-placeholder {
   font-weight: 500;
 }
 
+#app .app-content .section .section-content .item-contact {
+  margin-bottom: .5em !important;
+}
+
+#app .app-content .section .section-content .item-contact .text-label {
+  color: #757575;
+  align-items: baseline;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#app .app-content .section .section-content .item-contact .text-label svg {
+  margin-right: 3px;
+}
+
+#app .app-content .section .section-content .item-contact .icon-text {
+  align-items: center;
+  column-gap: 2px;
+  display: flex;
+}
+
+#app .app-content .section .section-content .item-contact .icon {
+  margin-right: 0 !important;
+}
+
 #app .app-content .section .section-content .item {
   margin-bottom: 1em;
   margin-left: 2em;
@@ -14928,7 +14953,6 @@ fieldset[disabled] .select select:-ms-input-placeholder {
 }
 
 #app .app-content .section .section-content .item .icon {
-  vertical-align: middle;
   margin-left: -1.5em;
   font-size: 1em;
   display: inline-block;
