@@ -2,7 +2,7 @@ var itemsWork = [
   {
     time: "Jan 2019 – ",
     position: "Geospatial Developer | UI Developer",
-    company: "Freelancer",
+    company: "Freelancing",
     location: "remote",
     description: [
       "Designed and developed various on-demand web-based applications, data dashboards, maps, and visualizations from conception to deployment.",
@@ -19,6 +19,18 @@ var itemsWork = [
       "Python",
       "QGIS",
     ],
+  },
+  {
+    time: "Mar 2023 – Apr 2024",
+    position: "Data Visualization Engineer",
+    company: "Seldon",
+    link: "https://www.seldon.io",
+    location: "London, UK",
+    description: [
+      "Created designs and code for various data-science-related interactive visual components",
+      "Played a critical role in refactoring the existing product front-end codebase",
+    ],
+    skills: ["TypeScript", "React.js", "Figma", "Data visualization", "D3.js"],
   },
   {
     time: "Oct 2020 — Dec 2022",

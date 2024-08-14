@@ -32,6 +32,38 @@ import { itemsProject, tags, outputs, statuses, links } from "./items/project";
 
 import React, { useState, useEffect } from "react";
 
+const renderItemStudy = (section, item, ii) => {
+  const icon = item.icon || section.icon;
+  return (
+    <div className={"item" + " item-" + section.title} key={ii}>
+      <div className="text-time-location">
+        <div className="text-time">
+          <FaCalendarAlt />
+          {item.time}
+        </div>
+      </div>
+      {icon && <div className="icon">{icon}</div>}
+      <div className="text-label">{item.label}</div>
+
+      {item.link1 ? (
+        <a className="link link1" href={item.link1}>
+          <div className="text text1">{item.text1}</div>
+        </a>
+      ) : (
+        <div className="text text1">{item.text1}</div>
+      )}
+      {item.text2 &&
+        (item.link2 ? (
+          <a className="link link2" href={item.link2}>
+            <div className="text text2">{item.text2}</div>
+          </a>
+        ) : (
+          <div className="text text2">{item.text2}</div>
+        ))}
+    </div>
+  );
+};
+
 const renderItemSkill = (section, item, ii) => {
   return (
     <div className={"item" + " item-" + section.title} key={ii}>
@@ -251,16 +283,16 @@ const sections = [
     renderItem: renderItemDefault,
   },
   {
-    title: "Projects",
-    items: itemsProject.sort((a, b) => (a.time > b.time ? -1 : 1)),
-    icon: <FaPuzzlePiece />,
-    renderItem: renderItemProject,
-  },
-  {
     title: "Professional Experience",
     items: itemsWork,
     icon: <MdWork />,
     renderItem: renderItemWork,
+  },
+  {
+    title: "Projects",
+    items: itemsProject.sort((a, b) => (a.time > b.time ? -1 : 1)),
+    icon: <FaPuzzlePiece />,
+    renderItem: renderItemProject,
   },
   {
     title: "Expertise",
@@ -272,7 +304,7 @@ const sections = [
     title: "Publications",
     icon: <FaBook />,
     items: itemsStudy,
-    renderItem: renderItemDefault,
+    renderItem: renderItemStudy,
   },
 ];
 
@@ -331,8 +363,7 @@ const App = (props) => {
               className="tab"
               href={"#" + section.title}
               key={si}
-              active={active}
-            >
+              active={active}>
               <div className="tab-part tab-icon">{section.icon}</div>
               <div className="tab-part tab-title">{section.title}</div>
             </Tabs.Tab>
@@ -347,8 +378,7 @@ const App = (props) => {
               key={si}
               id={section.title}
               className="content-section"
-              data-section={section.title}
-            >
+              data-section={section.title}>
               <Heading>{section.title}</Heading>
               <div className="section-content">
                 {section.title === "Projects" ? (
@@ -366,8 +396,7 @@ const App = (props) => {
                             }}
                             fullhd={{
                               size: 3,
-                            }}
-                          >
+                            }}>
                             {section.renderItem(section, item, ii)}
                           </Columns.Column>
                         );

@@ -24,6 +24,7 @@
   "homepage": "https://github.com/adammertel/cv#readme",
   "dependencies": {
     "bulma": "^0.9.4",
+    "@parcel/transformer-sass": "^2.12.0",
     "parcel-plugin-static-files-copy": "^2.6.0",
     "process": "^0.11.10",
     "react": "^16.13.1",
@@ -31,8 +32,5 @@
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
     "sass": "^1.57.1"
-  },
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.8.2"
   }
 }

@@ -59,7 +59,7 @@ tags.forEach((tag) => (tag["color"] = tagColor));
 
 export var itemsProject = [
   {
-    time: "2022",
+    time: "2023",
     label: "UniQ Dashboard",
     text: "A dashboard made for exploring data collected in the project UniQ (Prague struggle over universals ca. 1348–1500)",
     image: "uniq",
